@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Home.css';
 import Navbar from './Navbar';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const [products, setProducts] = useState([]);
@@ -20,6 +21,12 @@ const Home = () => {
     fetchProducts();
   }, []);
 
+  const handleAddToCart = (product) => {
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    cartItems.push(product);
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+  };
+
   return (
     <div className="container">
       <Navbar />
@@ -34,7 +41,7 @@ const Home = () => {
                   <h5 className="card-title">{product.name}</h5>
                   <p className="card-text">{product.description}</p>
                   <p className="card-text">${product.price}</p>
-                  <button className="btn btn-primary">Add to Cart</button>
+                  <button className="btn btn-primary" onClick={() => handleAddToCart(product)}>Add to Cart</button>
                 </div>
               </div>
             </div>
@@ -42,6 +49,11 @@ const Home = () => {
         ) : (
           <p>Loading...</p>
         )}
+      </div>
+      <div className="text-center">
+        <Link to="/cart">
+          <button className="btn btn-primary">View Cart</button>
+        </Link>
       </div>
     </div>
   );
