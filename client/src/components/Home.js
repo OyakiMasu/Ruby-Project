@@ -25,7 +25,10 @@ const Home = () => {
     const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
     cartItems.push(product);
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    const cartCount = cartItems.length;
+    localStorage.setItem('cartCount', cartCount);
   };
+  
 
   return (
     <div className="container">

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './Cart.css';
 
 const Cart = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -16,21 +17,30 @@ const Cart = () => {
 
   const totalPrice = cartItems.reduce((acc, item) => acc + item.price, 0);
 
+  const handleCheckout = () => {
+    // Navigate to the checkout page
+    window.location.href = 'https://example.com/checkout';
+  };
+
   return (
-    <div>
-      <h1>Cart</h1>
+    <div className="cart-container">
+      <h1 className="cart-title">Cart</h1>
       {cartItems.length === 0 ? (
-        <p>Your cart is empty</p>
+        <p className="cart-empty-message">Your cart is empty</p>
       ) : (
         <div>
           {cartItems.map((item) => (
-            <div key={item.id}>
-              <h2>{item.name}</h2>
-              <p>{item.price}</p>
-              <button onClick={() => handleRemoveFromCart(item)}>Remove</button>
+            <div className="cart-item" key={item.id}>
+              <img src={item.image} alt={item.name} className="cart-item-image" />
+              <div className="cart-item-details">
+                <h2 className="cart-item-name">{item.name}</h2>
+                <p className="cart-item-price">${item.price}</p>
+              </div>
+              <button className="cart-remove-button" onClick={() => handleRemoveFromCart(item)}>Remove</button>
             </div>
           ))}
-          <p>Total: {totalPrice}</p>
+          <p className="cart-total-price">Total: ${totalPrice}</p>
+          <button className="cart-checkout-button" onClick={handleCheckout}>Checkout</button>
         </div>
       )}
     </div>

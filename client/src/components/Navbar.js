@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa';
 import './Navbar.css';
@@ -13,6 +13,17 @@ const SearchBar = () => {
 };
 
 const Navbar = () => {
+  const [cartCount, setCartCount] = useState(0);
+
+  useEffect(() => {
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    setCartCount(cartItems.length);
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('cartCount', cartCount);
+  }, [cartCount]);
+
   return (
     <nav className="navbar">
       <ul className="navbar-nav">
@@ -23,7 +34,7 @@ const Navbar = () => {
           <Link className="nav-link" to="/cart">
             <div className="cart-icon">
               <FaShoppingCart size={24} />
-              <span className="badge">2</span>
+              <span className="badge">{cartCount}</span>
             </div>
           </Link>
         </li>
