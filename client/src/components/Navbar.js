@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaShoppingCart } from 'react-icons/fa';
+import './Navbar.css';
 
 const SearchBar = () => {
   return (
@@ -12,16 +14,23 @@ const SearchBar = () => {
 
 const Navbar = () => {
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link to="/login">Log out</Link>
+    <nav className="navbar">
+      <ul className="navbar-nav">
+        <li className="nav-item">
+          <Link className="nav-link" to="/login">Log out</Link>
         </li>
-        <li>
-          <Link to="/cart">Cart</Link>
+        <li className="nav-item">
+          <Link className="nav-link" to="/cart">
+            <div className="cart-icon">
+              <FaShoppingCart size={24} />
+              <span className="badge">2</span>
+            </div>
+          </Link>
         </li>
       </ul>
-      <SearchBar />
+      <div className="navbar-search">
+        <SearchBar />
+      </div>
     </nav>
   );
 };
