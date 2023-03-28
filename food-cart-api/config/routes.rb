@@ -1,10 +1,8 @@
 Rails.application.routes.draw do
-  resources :carts
-  resources :users
-  resources :orders
-  resources :foods
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  resources :carts, only:[:index]
+  resources :users, only:[:index]
+  resources :orders, only:[:index,:create,:update,:destroy]
+  resources :foods, only:[:index, :show]
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  # login and signup
 end
