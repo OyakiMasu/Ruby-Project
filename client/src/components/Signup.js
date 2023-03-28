@@ -87,7 +87,7 @@ function Signup({ setIsLoggedIn }) {
         </div>
         <center>
           <button type="submit" className="btn btn-primary mb-4">
-             Submit<Link to="/todo">Submit</Link>
+             Submit<Link to="/home">Submit</Link>
           </button>
         </center>
         <center>

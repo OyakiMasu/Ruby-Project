@@ -14,7 +14,7 @@ function Login() {
   }
   function handleSubmit(e) {
     e.preventDefault();
-        nav("/todo");
+        nav("/home");
     }
 // added form in the login
   return (
