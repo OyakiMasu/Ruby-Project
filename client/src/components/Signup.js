@@ -18,7 +18,7 @@ function Signup({ setIsLoggedIn }) {
   }
   function handleSubmit(e) {
     e.preventDefault();
-    nav("/todo");
+    nav("/home");
   }
 // added form to enable user to enter their credials and sign up
   return (
