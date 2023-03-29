@@ -1,9 +1,8 @@
 class User < ApplicationRecord
-    has_many :foods
-    has_many :foods, through: :order
+    has_many :orders
+    has_many :foods, through: :orders
 
     validates :email, presence: true, uniqueness: true
-    validates :email, format: {with: URI::MailTo::EMAIL_REGEX}
     validates :username, presence: true, uniqueness: true
-    validates :password_digest, length : {minimum: 8}
+    validates :password_digest, presence: true, length: {minimum: 8}
 end

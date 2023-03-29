@@ -1,7 +1,12 @@
 class OrdersController < ApplicationController
     def index
         orders = Order.all
-        render json: orders
+        render json: orders, include: :orders
+    end
+    # show /orders/{id}
+    def show
+        order = Order.find(params[:id])
+        render json: order
     end
 #    POST /orders => add to cart
 def create
