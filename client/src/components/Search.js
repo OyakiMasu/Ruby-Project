@@ -6,7 +6,7 @@ const Search = () => {
   const [products, setProducts] = useState([]);
 
   const handleSearch = async () => {
-    const res = await axios.get(`https://your-api-url.com/products?q=${searchTerm}`);
+    const res = await axios.get(`https://vickyprinz.github.io/db.json/cakes?q=${searchTerm}`);
     setProducts(res.data);
   };
 

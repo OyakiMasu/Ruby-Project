@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import './Cart.css';
 
 const Cart = () => {
@@ -18,11 +17,9 @@ const Cart = () => {
 
   const totalPrice = cartItems.reduce((acc, item) => acc + item.price, 0);
 
-  const navigate = useNavigate();
-
   const handleCheckout = () => {
-    // Pass the total price as a query parameter to the billing page
-    navigate(`/billing?total=${totalPrice}`);
+    // Navigate to the checkout page
+    window.location.href = 'https://checkoutpage.co/c/food-inc/food';
   };
 
   return (
@@ -33,26 +30,21 @@ const Cart = () => {
       ) : (
         <div>
           {cartItems.map((item) => (
-    <div key={item.id} className="cart-item">
-      <img src={item.image} alt={item.name} className="cart-item-image" />
-      <div className="cart-item-details">
-        <p className="cart-item-name">{item.name}</p>
-        <p className="cart-item-price">{`$${item.price}`}</p>
-        <button onClick={() => handleRemoveFromCart(item)} className="cart-item-remove">
-          Remove
-        </button>
-      </div>
+            <div className="cart-item" key={item.id}>
+              <img src={item.image} alt={item.name} className="cart-item-image" />
+              <div className="cart-item-details">
+                <h2 className="cart-item-name">{item.name}</h2>
+                <p className="cart-item-price">${item.price}</p>
+              </div>
+              <button className="cart-remove-button" onClick={() => handleRemoveFromCart(item)}>Remove</button>
+            </div>
+          ))}
+          <p className="cart-total-price">Total: ${totalPrice}</p>
+          <button className="cart-checkout-button" onClick={handleCheckout}>Checkout</button>
+        </div>
+      )}
     </div>
-))}
-
-      <p className="cart-total-price">{`Total: $${totalPrice}`}</p>
-      <button onClick={handleCheckout} className="cart-checkout">
-        Checkout
-      </button>
-    </div>
-  )}
-</div>
-);
+  );
 };
 
 export default Cart;
