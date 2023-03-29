@@ -11,6 +11,7 @@ rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
         render json: cart, status: :ok
     end
 
+
     private
     # strong params
     def find_cart
