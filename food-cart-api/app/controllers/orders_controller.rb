@@ -1,4 +1,7 @@
 class OrdersController < ApplicationController
+    # rescue 
+rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
+rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity
     def index
         orders = Order.all
         render json: orders, include: :orders
@@ -30,5 +33,11 @@ end
 # strong params
 def order_params
     params.permit(:food_id,:quantity,:price,:cart_id, :user_id)
+end
+def render_not_found_response
+    render json: {error: "Order not found"}, status: :not_found
+end
+def render_unprocessable_entity
+    render json: {error: "Validity errors"}, status: :unprocessable_entity
 end
 end
