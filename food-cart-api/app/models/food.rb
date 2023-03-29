@@ -1,5 +1,6 @@
 class Food < ApplicationRecord
-    belongs_to :order
+    has_many :orders
+    has_many :users, through: :order
 
     validates :name, presence: true
     validates :price, presence: true, numericality: { greater_than: 0}

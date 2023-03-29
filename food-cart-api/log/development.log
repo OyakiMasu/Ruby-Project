@@ -3510,3 +3510,16 @@ app/models/user.rb:2: syntax error, unexpected local variable or method, expecti
 app/models/user.rb:7: syntax error, unexpected ':', expecting `end'
 app/models/user.rb:7: syntax error, unexpected ',', expecting `end'
 app/controllers/users_controller.rb:4:in `index'
+Started GET "/orders" for 127.0.0.1 at 2023-03-29 11:18:04 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.03ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.5ms | Allocations: 47645)
+
+
+  
+NameError (Rails couldn't find a valid model for Users association. Please provide the :class_name option on the association declaration. If :class_name is already provided, make sure it's an ActiveRecord::Base subclass.):
+  
+app/controllers/orders_controller.rb:4:in `index'
