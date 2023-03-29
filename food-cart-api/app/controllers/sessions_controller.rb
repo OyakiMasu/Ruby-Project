@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-    # before_action :authorize, only: [:destroy]
+    before_action :authorize, only: [:destroy]
     #Login
     def create
         user = User.find_by(email: params[:email])

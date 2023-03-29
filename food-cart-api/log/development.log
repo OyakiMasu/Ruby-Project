@@ -8127,3 +8127,350 @@ Processing by UsersController#index as */*
 Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 1.4ms | Allocations: 3393)
 
 
+Started GET "/users" for 127.0.0.1 at 2023-03-29 23:08:46 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  Parameters: {"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"masuu", "email"=>"masu@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.26ms)
+Completed 200 OK in 58ms (Views: 43.0ms | ActiveRecord: 1.2ms | Allocations: 39373)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-03-29 23:09:35 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"oyaki", "email"=>"oyaki@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"oyaki", "email"=>"oyaki@gmail.com"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 17ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 2669)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-03-29 23:10:07 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"oyaki", "email"=>"oyaki@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"oyaki", "email"=>"oyaki@gmail.com"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 0.9ms | ActiveRecord: 0.9ms | Allocations: 1067)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-03-29 23:11:23 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"oyaki", "email"=>"oyaki@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"oyaki", "email"=>"oyaki@gmail.com"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 14ms (Views: 2.0ms | ActiveRecord: 0.8ms | Allocations: 1943)
+
+
+Started GET "/users" for 127.0.0.1 at 2023-03-29 23:13:03 +0300
+Processing by UsersController#index as */*
+  Parameters: {"username"=>"oyaki", "email"=>"oyaki@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"oyaki", "email"=>"oyaki@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.22ms)
+Completed 200 OK in 63ms (Views: 46.9ms | ActiveRecord: 0.6ms | Allocations: 39251)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2023-03-29 23:13:13 +0300
+Processing by UsersController#show as */*
+  Parameters: {"username"=>"oyaki", "email"=>"oyaki@gmail.com", "password"=>"[FILTERED]", "id"=>"1", "user"=>{"username"=>"oyaki", "email"=>"oyaki@gmail.com"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2023-03-29 23:13:29 +0300
+Processing by UsersController#show as */*
+  Parameters: {"username"=>"oyaki", "email"=>"oyaki@gmail.com", "password"=>"[FILTERED]", "id"=>"1", "user"=>{"username"=>"oyaki", "email"=>"oyaki@gmail.com"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 0.7ms | ActiveRecord: 1.1ms | Allocations: 1067)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2023-03-29 23:14:10 +0300
+Processing by UsersController#show as */*
+  Parameters: {"username"=>"oyaki", "email"=>"oyaki@gmail.com", "password"=>"[FILTERED]", "id"=>"1", "user"=>{"username"=>"oyaki", "email"=>"oyaki@gmail.com"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 404 Not Found in 2ms (Views: 0.8ms | ActiveRecord: 1.1ms | Allocations: 662)
+
+
+Started GET "/users" for 127.0.0.1 at 2023-03-29 23:14:26 +0300
+Processing by UsersController#index as */*
+  Parameters: {"username"=>"oyaki", "email"=>"oyaki@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"oyaki", "email"=>"oyaki@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.16ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.3ms | Allocations: 3188)
+
+
+Started GET "/users" for 127.0.0.1 at 2023-03-29 23:15:41 +0300
+Processing by UsersController#index as */*
+  Parameters: {"username"=>"oyaki", "email"=>"oyaki@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"oyaki", "email"=>"oyaki@gmail.com"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.91ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 1.2ms | Allocations: 3348)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2023-03-29 23:15:47 +0300
+Processing by UsersController#show as */*
+  Parameters: {"username"=>"oyaki", "email"=>"oyaki@gmail.com", "password"=>"[FILTERED]", "id"=>"1", "user"=>{"username"=>"oyaki", "email"=>"oyaki@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.2ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 6ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 1022)
+
+
+Started GET "/users/" for 127.0.0.1 at 2023-03-29 23:15:55 +0300
+Processing by UsersController#index as */*
+  Parameters: {"username"=>"oyaki", "email"=>"oyaki@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"oyaki", "email"=>"oyaki@gmail.com"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.55ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.2ms | Allocations: 1440)
+
+
+Started GET "/users" for 127.0.0.1 at 2023-03-29 23:16:00 +0300
+Processing by UsersController#index as */*
+  Parameters: {"username"=>"oyaki", "email"=>"oyaki@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"oyaki", "email"=>"oyaki@gmail.com"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.08ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 1438)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-03-29 23:16:54 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"oyaki", "email"=>"oyaki@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"oyaki", "email"=>"oyaki@gmail.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x00007f299c598680>, params: {"username"=>"oyaki", "email"=>"oyaki@gmail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"create", "user"=>{"username"=>"oyaki", "email"=>"oyaki@gmail.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "oyaki"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "oyaki@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "oyaki"], ["email", "oyaki@gmail.com"], ["password_digest", "[FILTERED]"], ["image_url", nil], ["created_at", "2023-03-29 20:16:54.936982"], ["updated_at", "2023-03-29 20:16:54.936982"]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mTRANSACTION (36.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "oyaki"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "oyaki@gmail.com"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `create'
+[active_model_serializers]   [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."user_id" = ?[0m  [["user_id", 9]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:24:in `create'
+[active_model_serializers]   [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods" INNER JOIN "orders" ON "foods"."id" = "orders"."food_id" WHERE "orders"."user_id" = ?[0m  [["user_id", 9]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:24:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (46.14ms)
+Completed 201 Created in 339ms (Views: 45.3ms | ActiveRecord: 38.4ms | Allocations: 21855)
+
+
+Started GET "/me" for 127.0.0.1 at 2023-03-29 23:17:03 +0300
+Processing by UsersController#show as */*
+  Parameters: {"username"=>"oyaki", "email"=>"oyaki@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"oyaki", "email"=>"oyaki@gmail.com"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15:in `show'
+[active_model_serializers]   [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."user_id" = ?[0m  [["user_id", 9]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:16:in `show'
+[active_model_serializers]   [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods" INNER JOIN "orders" ON "foods"."id" = "orders"."food_id" WHERE "orders"."user_id" = ?[0m  [["user_id", 9]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:16:in `show'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (9.18ms)
+Completed 200 OK in 15ms (Views: 9.5ms | ActiveRecord: 0.5ms | Allocations: 3443)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-03-29 23:17:46 +0300
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"oyaki", "email"=>"oyaki@gmail.com", "password"=>"[FILTERED]", "session"=>{"username"=>"oyaki", "email"=>"oyaki@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "oyaki@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."user_id" = ?[0m  [["user_id", 9]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:8:in `create'
+[active_model_serializers]   [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods" INNER JOIN "orders" ON "foods"."id" = "orders"."food_id" WHERE "orders"."user_id" = ?[0m  [["user_id", 9]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:8:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.32ms)
+Completed 200 OK in 233ms (Views: 4.6ms | ActiveRecord: 0.5ms | Allocations: 3041)
+
+
+Started GET "/me" for 127.0.0.1 at 2023-03-29 23:18:01 +0300
+Processing by UsersController#show as */*
+  Parameters: {"username"=>"oyaki", "email"=>"oyaki@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"oyaki", "email"=>"oyaki@gmail.com"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15:in `show'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."user_id" = ?[0m  [["user_id", 9]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:16:in `show'
+[active_model_serializers]   [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods" INNER JOIN "orders" ON "foods"."id" = "orders"."food_id" WHERE "orders"."user_id" = ?[0m  [["user_id", 9]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:16:in `show'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.97ms)
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.4ms | Allocations: 3215)
+
+
+Started GET "/users" for 127.0.0.1 at 2023-03-29 23:18:14 +0300
+Processing by UsersController#index as */*
+  Parameters: {"username"=>"oyaki", "email"=>"oyaki@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"oyaki", "email"=>"oyaki@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.65ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.3ms | Allocations: 1550)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2023-03-29 23:18:20 +0300
+Processing by UsersController#show as */*
+  Parameters: {"username"=>"oyaki", "email"=>"oyaki@gmail.com", "password"=>"[FILTERED]", "id"=>"1", "user"=>{"username"=>"oyaki", "email"=>"oyaki@gmail.com"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15:in `show'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."user_id" = ?[0m  [["user_id", 9]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:16:in `show'
+[active_model_serializers]   [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods" INNER JOIN "orders" ON "foods"."id" = "orders"."food_id" WHERE "orders"."user_id" = ?[0m  [["user_id", 9]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:16:in `show'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.15ms)
+Completed 200 OK in 10ms (Views: 5.6ms | ActiveRecord: 0.5ms | Allocations: 3213)
+
+
+Started GET "/users" for 127.0.0.1 at 2023-03-29 23:18:33 +0300
+Processing by UsersController#index as */*
+  Parameters: {"username"=>"oyaki", "email"=>"oyaki@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"oyaki", "email"=>"oyaki@gmail.com"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.86ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.2ms | Allocations: 1550)
+
+
+Started GET "/orders" for 127.0.0.1 at 2023-03-29 23:18:42 +0300
+Processing by OrdersController#index as */*
+  Parameters: {"username"=>"oyaki", "email"=>"oyaki@gmail.com", "password"=>"[FILTERED]", "order"=>{}}
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:7:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.08ms)
+Completed 200 OK in 35ms (Views: 33.7ms | ActiveRecord: 0.6ms | Allocations: 16884)
+
+
+Started GET "/carts" for 127.0.0.1 at 2023-03-29 23:18:50 +0300
+Processing by CartsController#index as */*
+  Parameters: {"username"=>"oyaki", "email"=>"oyaki@gmail.com", "password"=>"[FILTERED]", "cart"=>{}}
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts"[0m
+  ↳ app/controllers/carts_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."cart_id" = ?[0m  [["cart_id", 1]]
+[active_model_serializers]   ↳ app/controllers/carts_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."cart_id" = ?[0m  [["cart_id", 2]]
+[active_model_serializers]   ↳ app/controllers/carts_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."cart_id" = ?[0m  [["cart_id", 3]]
+[active_model_serializers]   ↳ app/controllers/carts_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."cart_id" = ?[0m  [["cart_id", 4]]
+[active_model_serializers]   ↳ app/controllers/carts_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."cart_id" = ?[0m  [["cart_id", 5]]
+[active_model_serializers]   ↳ app/controllers/carts_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (21.43ms)
+Completed 200 OK in 54ms (Views: 52.4ms | ActiveRecord: 1.6ms | Allocations: 21457)
+
+
+Started GET "/foods" for 127.0.0.1 at 2023-03-29 23:18:58 +0300
+Processing by FoodsController#index as */*
+  Parameters: {"username"=>"oyaki", "email"=>"oyaki@gmail.com", "password"=>"[FILTERED]", "food"=>{}}
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/controllers/foods_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."food_id" = ?[0m  [["food_id", 1]]
+[active_model_serializers]   ↳ app/controllers/foods_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "orders" ON "users"."id" = "orders"."user_id" WHERE "orders"."food_id" = ?[0m  [["food_id", 1]]
+[active_model_serializers]   ↳ app/controllers/foods_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."food_id" = ?[0m  [["food_id", 2]]
+[active_model_serializers]   ↳ app/controllers/foods_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "orders" ON "users"."id" = "orders"."user_id" WHERE "orders"."food_id" = ?[0m  [["food_id", 2]]
+[active_model_serializers]   ↳ app/controllers/foods_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."food_id" = ?[0m  [["food_id", 3]]
+[active_model_serializers]   ↳ app/controllers/foods_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "orders" ON "users"."id" = "orders"."user_id" WHERE "orders"."food_id" = ?[0m  [["food_id", 3]]
+[active_model_serializers]   ↳ app/controllers/foods_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."food_id" = ?[0m  [["food_id", 4]]
+[active_model_serializers]   ↳ app/controllers/foods_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "orders" ON "users"."id" = "orders"."user_id" WHERE "orders"."food_id" = ?[0m  [["food_id", 4]]
+[active_model_serializers]   ↳ app/controllers/foods_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."food_id" = ?[0m  [["food_id", 5]]
+[active_model_serializers]   ↳ app/controllers/foods_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "orders" ON "users"."id" = "orders"."user_id" WHERE "orders"."food_id" = ?[0m  [["food_id", 5]]
+[active_model_serializers]   ↳ app/controllers/foods_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (31.4ms)
+Completed 200 OK in 83ms (Views: 81.1ms | ActiveRecord: 1.8ms | Allocations: 29397)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2023-03-29 23:19:32 +0300
+Processing by SessionsController#destroy as */*
+  Parameters: {"username"=>"oyaki", "email"=>"oyaki@gmail.com", "password"=>"[FILTERED]", "session"=>{"username"=>"oyaki", "email"=>"oyaki@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+Completed 204 No Content in 2ms (ActiveRecord: 0.2ms | Allocations: 641)
+
+
+Started GET "/users" for 127.0.0.1 at 2023-03-29 23:19:40 +0300
+Processing by UsersController#index as */*
+  Parameters: {"username"=>"oyaki", "email"=>"oyaki@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"oyaki", "email"=>"oyaki@gmail.com"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.93ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 1550)
+
+
+Started GET "/foods" for 127.0.0.1 at 2023-03-29 23:19:48 +0300
+Processing by FoodsController#index as */*
+  Parameters: {"username"=>"oyaki", "email"=>"oyaki@gmail.com", "password"=>"[FILTERED]", "food"=>{}}
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/controllers/foods_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."food_id" = ?[0m  [["food_id", 1]]
+[active_model_serializers]   ↳ app/controllers/foods_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "orders" ON "users"."id" = "orders"."user_id" WHERE "orders"."food_id" = ?[0m  [["food_id", 1]]
+[active_model_serializers]   ↳ app/controllers/foods_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."food_id" = ?[0m  [["food_id", 2]]
+[active_model_serializers]   ↳ app/controllers/foods_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "orders" ON "users"."id" = "orders"."user_id" WHERE "orders"."food_id" = ?[0m  [["food_id", 2]]
+[active_model_serializers]   ↳ app/controllers/foods_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."food_id" = ?[0m  [["food_id", 3]]
+[active_model_serializers]   ↳ app/controllers/foods_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "orders" ON "users"."id" = "orders"."user_id" WHERE "orders"."food_id" = ?[0m  [["food_id", 3]]
+[active_model_serializers]   ↳ app/controllers/foods_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."food_id" = ?[0m  [["food_id", 4]]
+[active_model_serializers]   ↳ app/controllers/foods_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "orders" ON "users"."id" = "orders"."user_id" WHERE "orders"."food_id" = ?[0m  [["food_id", 4]]
+[active_model_serializers]   ↳ app/controllers/foods_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."food_id" = ?[0m  [["food_id", 5]]
+[active_model_serializers]   ↳ app/controllers/foods_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "orders" ON "users"."id" = "orders"."user_id" WHERE "orders"."food_id" = ?[0m  [["food_id", 5]]
+[active_model_serializers]   ↳ app/controllers/foods_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (29.34ms)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 1.4ms | Allocations: 13253)
+
+
+Started GET "/carts" for 127.0.0.1 at 2023-03-29 23:19:52 +0300
+Processing by CartsController#index as */*
+  Parameters: {"username"=>"oyaki", "email"=>"oyaki@gmail.com", "password"=>"[FILTERED]", "cart"=>{}}
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts"[0m
+  ↳ app/controllers/carts_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."cart_id" = ?[0m  [["cart_id", 1]]
+[active_model_serializers]   ↳ app/controllers/carts_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."cart_id" = ?[0m  [["cart_id", 2]]
+[active_model_serializers]   ↳ app/controllers/carts_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."cart_id" = ?[0m  [["cart_id", 3]]
+[active_model_serializers]   ↳ app/controllers/carts_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."cart_id" = ?[0m  [["cart_id", 4]]
+[active_model_serializers]   ↳ app/controllers/carts_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."cart_id" = ?[0m  [["cart_id", 5]]
+[active_model_serializers]   ↳ app/controllers/carts_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (14.47ms)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.9ms | Allocations: 6673)
+
+

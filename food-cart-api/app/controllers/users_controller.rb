@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+    before_action :authorize, only: [:show, :update, :destroy]
 
 # Handle ActiveRecord Not Found exception
 rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
