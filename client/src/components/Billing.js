@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 
-const Billing = ({ total }) => {
+const Billing = (props) => {
   const [cardNumber, setCardNumber] = useState('');
   const [tillNumber, setTillNumber] = useState('');
   const [bankAccount, setBankAccount] = useState('');
+
+  // Extract the total price from the URL query parameter
+  const searchParams = new URLSearchParams(props.location.search);
+  const total = searchParams.get('total');
 
   const handlePayment = () => {
     // Code to handle the payment goes here
