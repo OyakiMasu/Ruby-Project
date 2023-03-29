@@ -1,5 +1,6 @@
 class User < ApplicationRecord
-    has_many :orders,foods  dependent: :destroy
+    has_many :orders  dependent: :destroy
+    has_many :foods, through: :orders
 
     validates :email, presence: true, uniqueness: true
     validates :email, format: {with: URI::MailTo::EMAIL_REGEX}
