@@ -3586,3 +3586,18 @@ app/models/user.rb:8: syntax error, unexpected ',', expecting `end'
 app/models/user.rb:8: syntax error, unexpected ':', expecting `end'
 app/models/user.rb:8: syntax error, unexpected ',', expecting `end'
 app/controllers/users_controller.rb:4:in `index'
+Started GET "/users" for 127.0.0.1 at 2023-03-29 11:32:48 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 19051)
+
+
+  
+SyntaxError (/home/user/Development/code/phase-4/Ruby-Project/food-cart-api/app/models/user.rb:8: syntax error, unexpected ':', expecting `end'
+...  validates :password, length : {minimum: 8}
+...                              ^
+):
+  
+app/models/user.rb:8: syntax error, unexpected ':', expecting `end'
+app/models/user.rb:8: syntax error, unexpected ':', expecting `end'
+app/controllers/users_controller.rb:4:in `index'
