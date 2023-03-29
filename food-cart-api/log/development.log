@@ -6275,6 +6275,25 @@ Processing by OrdersController#show as HTML
 Completed 200 OK in 30ms (Views: 25.9ms | ActiveRecord: 1.3ms | Allocations: 61210)
 
 
+Started GET "/carts" for 127.0.0.1 at 2023-03-29 12:38:59 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CartsController#index as HTML
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts"[0m
+  ↳ app/controllers/carts_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."cart_id" = ?[0m  [["cart_id", 1]]
+[active_model_serializers]   ↳ app/controllers/carts_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."cart_id" = ?[0m  [["cart_id", 2]]
+[active_model_serializers]   ↳ app/controllers/carts_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."cart_id" = ?[0m  [["cart_id", 3]]
+[active_model_serializers]   ↳ app/controllers/carts_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."cart_id" = ?[0m  [["cart_id", 4]]
+[active_model_serializers]   ↳ app/controllers/carts_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."cart_id" = ?[0m  [["cart_id", 5]]
+[active_model_serializers]   ↳ app/controllers/carts_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (20.28ms)
+Completed 200 OK in 38ms (Views: 29.3ms | ActiveRecord: 1.4ms | Allocations: 73174)
+
+
 Started GET "/" for ::1 at 2023-03-29 12:46:22 +0300
   [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by Rails::WelcomeController#index as HTML
