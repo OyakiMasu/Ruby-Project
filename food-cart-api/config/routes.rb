@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   resources :carts, only:[:index, :show]
-  resources :users, only:[:index]
+  resources :users, only:[:index, :show, :create]
   resources :orders, only:[:index,:show,:create,:update,:destroy]
   resources :foods, only:[:index, :show]
 
   # login and signup
+
 end
