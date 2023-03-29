@@ -1,4 +1,4 @@
-// https://example.com/checkout
+
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Cart.css';
@@ -43,7 +43,7 @@ const Cart = () => {
 
   const handleCheckout = () => {
     // Navigate to the checkout page
-    window.location.href = 'https://example.com/checkout';
+    window.location.href = 'https://checkoutpage.co/c/food-inc/food';
   };
 
   return (

@@ -4,7 +4,6 @@ import './Home.css';
 import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
 import Rating from 'react-rating';
-import Footer from './Footer';
 
 const Home = () => {
   const [products, setProducts] = useState([]);
@@ -20,7 +19,6 @@ const Home = () => {
         console.error(error);
       }
     };
-    
 
     fetchProducts();
   }, []);
@@ -36,12 +34,8 @@ const Home = () => {
     const cartCount = cartItems.length;
     localStorage.setItem('cartCount', cartCount);
   };
-  
-   
-  
 
   return (
-    
     <div className="container">
       <Navbar />
       <h1>Best Seller</h1>
@@ -56,17 +50,17 @@ const Home = () => {
                   <p className="card-text">{product.description}</p>
                   <p className="card-text">${product.price}</p>
                   <Rating
-  initialRating={product.rating}
-  emptySymbol="fa fa-star-o fa-lg"
-  fullSymbol="fa fa-star fa-lg"
-  onClick={(value) => {
-    product.rating = value;
-    localStorage.setItem('cartItems', JSON.stringify(products));
-  }}
-/>
-
-
-                  <button className="btn btn-primary" onClick={() => handleAddToCart(product)}>Add to Cart</button>
+                    initialRating={product.rating}
+                    emptySymbol="fa fa-star-o fa-lg"
+                    fullSymbol="fa fa-star fa-lg"
+                    onClick={(value) => {
+                      product.rating = value;
+                      localStorage.setItem('cartItems', JSON.stringify(products));
+                    }}
+                  />
+                  <button className="btn btn-primary" onClick={() => handleAddToCart(product)}>
+                    Add to Cart
+                  </button>
                 </div>
               </div>
             </div>
@@ -74,16 +68,18 @@ const Home = () => {
         ) : (
           <p>Loading...</p>
         )}
-        <div>
-  <h1>Flash Sale</h1>
-  <div className="row">
-    {products && products.length > 0 ? (
-      products.map((product) => (
-        <div className="col-lg-4 col-md-6 mb-4" key={product.id}>
-          <div className="card">
-            <img className="card-img-top" src={product.image} alt="product img" />
-            <div className="card-body">
-              <h5 className="card-title">{product.name}</h5>
+      </div>
+      <div>
+        <h1>Flash Sale</h1>
+        <div className="row">
+          {products && products.length > 0 ? (
+            products.map((product) => (
+              <div className="col-lg-4 col-md-6 mb-4" key={product.id}>
+                <div className="card">
+                  <img className="card-img-top" src={product.image} alt="product img" />
+                  <div className="card-body">
+                    <h5 className="card-title">{product
+.name}</h5>
               <p className="card-text">{product.description}</p>
               <p className="card-text">${product.price}</p>
               <button className="btn btn-primary" onClick={() => handleAddToCart(product)}>Add to Cart</button>
@@ -97,16 +93,14 @@ const Home = () => {
   </div>
 </div>
 
-      </div>
-      <div className="text-center">
-        <Link to="/cart">
-          <button className="btn btn-primary">View Cart</button>
-        </Link>
-      </div>
-      <Footer />
-
-    </div>
-    
+<div>
+  <div className="text-center">
+    <Link to="/cart">
+      <button className="btn btn-primary">View Cart</button>
+    </Link>
+  </div>
+</div>
+</div>
   );
 };
 
