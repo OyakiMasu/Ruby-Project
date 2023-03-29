@@ -4,6 +4,7 @@ import './Home.css';
 import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
 import Rating from 'react-rating';
+import Footer from './Footer';
 
 const Home = () => {
   const [products, setProducts] = useState([]);
@@ -102,7 +103,10 @@ const Home = () => {
           <button className="btn btn-primary">View Cart</button>
         </Link>
       </div>
+      <Footer />
+
     </div>
+    
   );
 };
 

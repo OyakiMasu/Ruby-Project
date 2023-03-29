@@ -6,8 +6,11 @@ const Search = () => {
   const [products, setProducts] = useState([]);
 
   const handleSearch = async () => {
-    const res = await axios.get(`https://vickyprinz.github.io/db.json/cakes?q=${searchTerm}`);
-    setProducts(res.data);
+    const res = await axios.get(`https://vickyprinz.github.io/db.json`);
+    const filteredProducts = res.data.cakes.filter((product) =>
+      product.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setProducts(filteredProducts);
   };
 
   return (
