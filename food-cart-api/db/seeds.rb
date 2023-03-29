@@ -36,15 +36,17 @@ carts = Cart.all
 food = foods.uniq.sample
 user = users.uniq.sample
 cart = carts.uniq.sample
+
 5.times do
     Order.create(
         price: Faker::Number.positive,
         food_id: food.id,
         user_id: user.id,
-        quantity: 0,
+        quantity: 1,
         cart_id: cart.id
     )
 end
+
 
 puts "done seeding."
  
