@@ -1,3 +1,5 @@
 class CartSerializer < ActiveModel::Serializer
-  attributes :id, :name, :image, :total_price, :quantity
+  attributes :id, :total_price, :total_quantity
+
+  belongs_to :order
 end
