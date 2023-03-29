@@ -7743,3 +7743,387 @@ Processing by UsersController#destroy as */*
 Completed 204 No Content in 34ms (ActiveRecord: 21.1ms | Allocations: 6832)
 
 
+Started GET "/users" for 127.0.0.1 at 2023-03-29 22:31:18 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.2ms)
+Completed 200 OK in 51ms (Views: 33.0ms | ActiveRecord: 0.7ms | Allocations: 43464)
+
+
+Started GET "/users" for 127.0.0.1 at 2023-03-29 22:34:44 +0300
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.55ms)
+Completed 200 OK in 13ms (Views: 8.8ms | ActiveRecord: 1.5ms | Allocations: 6612)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-29 22:36:25 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"masuu", "email"=>"masu@gmail.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x00007f1d28d8b728>, params: {"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"create", "user"=>{"username"=>"masuu", "email"=>"masu@gmail.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "masuu"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "masu@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "masuu"], ["email", "masu@gmail.com"], ["password_digest", "[FILTERED]"], ["image_url", nil], ["created_at", "2023-03-29 19:36:26.210692"], ["updated_at", "2023-03-29 19:36:26.210692"]]
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (35.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "masuu"], ["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "masu@gmail.com"], ["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+[active_model_serializers]   [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."user_id" = ?[0m  [["user_id", 7]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:23:in `create'
+[active_model_serializers]   [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods" INNER JOIN "orders" ON "foods"."id" = "orders"."food_id" WHERE "orders"."user_id" = ?[0m  [["user_id", 7]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:23:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (28.22ms)
+Completed 201 Created in 318ms (Views: 27.2ms | ActiveRecord: 38.0ms | Allocations: 22864)
+
+
+Started GET "/me" for 127.0.0.1 at 2023-03-29 22:36:52 +0300
+Processing by UsersController#show as */*
+  Parameters: {"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"masuu", "email"=>"masu@gmail.com"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 404 Not Found in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms | Allocations: 538)
+
+
+Started GET "/users" for 127.0.0.1 at 2023-03-29 22:38:28 +0300
+Processing by UsersController#index as */*
+  Parameters: {"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"masuu", "email"=>"masu@gmail.com"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.99ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms | Allocations: 1454)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2023-03-29 22:38:38 +0300
+Processing by UsersController#show as */*
+  Parameters: {"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]", "id"=>"7", "user"=>{"username"=>"masuu", "email"=>"masu@gmail.com"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14:in `show'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."user_id" = ?[0m  [["user_id", 7]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:15:in `show'
+[active_model_serializers]   [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods" INNER JOIN "orders" ON "foods"."id" = "orders"."food_id" WHERE "orders"."user_id" = ?[0m  [["user_id", 7]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:15:in `show'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.87ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.4ms | Allocations: 2789)
+
+
+Started DELETE "/users/7" for 127.0.0.1 at 2023-03-29 22:38:50 +0300
+Processing by UsersController#destroy as */*
+  Parameters: {"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]", "id"=>"7", "user"=>{"username"=>"masuu", "email"=>"masu@gmail.com"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:42:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:44:in `destroy'
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 7]]
+  ↳ app/controllers/users_controller.rb:44:in `destroy'
+  [1m[36mTRANSACTION (9.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:44:in `destroy'
+Completed 204 No Content in 14ms (ActiveRecord: 9.8ms | Allocations: 1766)
+
+
+Started DELETE "/users/me" for 127.0.0.1 at 2023-03-29 22:39:45 +0300
+Processing by UsersController#destroy as */*
+  Parameters: {"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]", "id"=>"me", "user"=>{"username"=>"masuu", "email"=>"masu@gmail.com"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:42:in `destroy'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 404 Not Found in 3ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 585)
+
+
+Started GET "/users/me" for 127.0.0.1 at 2023-03-29 22:39:49 +0300
+Processing by UsersController#show as */*
+  Parameters: {"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]", "id"=>"me", "user"=>{"username"=>"masuu", "email"=>"masu@gmail.com"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14:in `show'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 404 Not Found in 3ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 592)
+
+
+Started GET "/me" for 127.0.0.1 at 2023-03-29 22:39:54 +0300
+Processing by UsersController#show as */*
+  Parameters: {"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"masuu", "email"=>"masu@gmail.com"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 404 Not Found in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 214)
+
+
+Started GET "/user/1" for 127.0.0.1 at 2023-03-29 22:40:06 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/user/1"):
+  
+Started GET "/users/1" for 127.0.0.1 at 2023-03-29 22:40:14 +0300
+Processing by UsersController#show as */*
+  Parameters: {"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]", "id"=>"1", "user"=>{"username"=>"masuu", "email"=>"masu@gmail.com"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14:in `show'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:15:in `show'
+[active_model_serializers]   [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods" INNER JOIN "orders" ON "foods"."id" = "orders"."food_id" WHERE "orders"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:15:in `show'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (85.27ms)
+Completed 200 OK in 87ms (Views: 85.1ms | ActiveRecord: 0.7ms | Allocations: 36392)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-29 22:40:50 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"masuu", "email"=>"masu@gmail.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x00007f1d28d94738>, params: {"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"create", "user"=>{"username"=>"masuu", "email"=>"masu@gmail.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "masuu"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "masu@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "masuu"], ["email", "masu@gmail.com"], ["password_digest", "[FILTERED]"], ["image_url", nil], ["created_at", "2023-03-29 19:40:50.277807"], ["updated_at", "2023-03-29 19:40:50.277807"]]
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (40.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "masuu"], ["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "masu@gmail.com"], ["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:23:in `create'
+[active_model_serializers]   [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods" INNER JOIN "orders" ON "foods"."id" = "orders"."food_id" WHERE "orders"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:23:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.46ms)
+Completed 201 Created in 283ms (Views: 4.7ms | ActiveRecord: 41.1ms | Allocations: 6924)
+
+
+Started GET "/users" for 127.0.0.1 at 2023-03-29 22:41:42 +0300
+Processing by UsersController#index as */*
+  Parameters: {"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"masuu", "email"=>"masu@gmail.com"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.31ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.4ms | Allocations: 1439)
+
+
+Started GET "/me" for 127.0.0.1 at 2023-03-29 22:42:22 +0300
+Processing by UsersController#show as */*
+  Parameters: {"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"masuu", "email"=>"masu@gmail.com"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.18ms)
+Completed 404 Not Found in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 214)
+
+
+Started GET "/users" for ::1 at 2023-03-29 22:43:21 +0300
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.1ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.3ms | Allocations: 1434)
+
+
+Started GET "/favicon.ico" for ::1 at 2023-03-29 22:43:21 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/users/me" for ::1 at 2023-03-29 22:43:29 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"me"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14:in `show'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 404 Not Found in 2ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 580)
+
+
+Started GET "/me" for ::1 at 2023-03-29 22:43:35 +0300
+Processing by UsersController#show as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 404 Not Found in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 210)
+
+
+Started GET "/me" for ::1 at 2023-03-29 22:43:58 +0300
+Processing by UsersController#show as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 404 Not Found in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 210)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-03-29 22:47:09 +0300
+  
+SyntaxError (/home/student/Phase-4/Ruby-Project/food-cart-api/app/controllers/sessions_controller.rb:9: syntax error, unexpected ':', expecting `end'
+            render json : { errors: ["Invalid username...
+                        ^
+/home/student/Phase-4/Ruby-Project/food-cart-api/app/controllers/sessions_controller.rb:9: syntax error, unexpected ',', expecting `end'
+...valid username or password"] }, status: :unauthorized
+...                              ^
+):
+  
+app/controllers/sessions_controller.rb:9: syntax error, unexpected ':', expecting `end'
+app/controllers/sessions_controller.rb:9: syntax error, unexpected ',', expecting `end'
+app/controllers/sessions_controller.rb:9: syntax error, unexpected ':', expecting `end'
+app/controllers/sessions_controller.rb:9: syntax error, unexpected ',', expecting `end'
+Started POST "/login" for 127.0.0.1 at 2023-03-29 22:48:06 +0300
+  
+SyntaxError (/home/student/Phase-4/Ruby-Project/food-cart-api/app/controllers/sessions_controller.rb:9: syntax error, unexpected ':', expecting `end'
+            render json : { errors: "Invalid username ...
+                        ^
+/home/student/Phase-4/Ruby-Project/food-cart-api/app/controllers/sessions_controller.rb:9: syntax error, unexpected ',', expecting `end'
+...nvalid username or password" }, status: :unauthorized
+...                              ^
+):
+  
+app/controllers/sessions_controller.rb:9: syntax error, unexpected ':', expecting `end'
+app/controllers/sessions_controller.rb:9: syntax error, unexpected ',', expecting `end'
+app/controllers/sessions_controller.rb:9: syntax error, unexpected ':', expecting `end'
+app/controllers/sessions_controller.rb:9: syntax error, unexpected ',', expecting `end'
+Started POST "/login" for 127.0.0.1 at 2023-03-29 22:50:29 +0300
+  
+SyntaxError (/home/student/Phase-4/Ruby-Project/food-cart-api/app/controllers/sessions_controller.rb:10: syntax error, unexpected ':', expecting `end'
+            render json : { errors: "Invalid username ...
+                        ^
+/home/student/Phase-4/Ruby-Project/food-cart-api/app/controllers/sessions_controller.rb:10: syntax error, unexpected ',', expecting `end'
+...nvalid username or password" }, status: :unauthorized
+...                              ^
+):
+  
+app/controllers/sessions_controller.rb:10: syntax error, unexpected ':', expecting `end'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected ',', expecting `end'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected ':', expecting `end'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected ',', expecting `end'
+Started GET "/login" for ::1 at 2023-03-29 22:50:41 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+Started POST "/login" for 127.0.0.1 at 2023-03-29 22:50:50 +0300
+  
+SyntaxError (/home/student/Phase-4/Ruby-Project/food-cart-api/app/controllers/sessions_controller.rb:10: syntax error, unexpected ':', expecting `end'
+            render json : { errors: "Invalid username ...
+                        ^
+/home/student/Phase-4/Ruby-Project/food-cart-api/app/controllers/sessions_controller.rb:10: syntax error, unexpected ',', expecting `end'
+...nvalid username or password" }, status: :unauthorized
+...                              ^
+):
+  
+app/controllers/sessions_controller.rb:10: syntax error, unexpected ':', expecting `end'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected ',', expecting `end'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected ':', expecting `end'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected ',', expecting `end'
+Started POST "/login" for 127.0.0.1 at 2023-03-29 22:51:12 +0300
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]", "session"=>{"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "masu@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:8:in `create'
+[active_model_serializers]   [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods" INNER JOIN "orders" ON "foods"."id" = "orders"."food_id" WHERE "orders"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:8:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (14.23ms)
+Completed 200 OK in 265ms (Views: 14.5ms | ActiveRecord: 2.2ms | Allocations: 16160)
+
+
+Started GET "/lme" for 127.0.0.1 at 2023-03-29 22:51:21 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/lme"):
+  
+Started GET "/me" for 127.0.0.1 at 2023-03-29 22:51:27 +0300
+Processing by UsersController#show as */*
+  Parameters: {"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"masuu", "email"=>"masu@gmail.com"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 404 Not Found in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 313)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-03-29 22:51:45 +0300
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]", "session"=>{"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "masu@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:8:in `create'
+[active_model_serializers]   [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods" INNER JOIN "orders" ON "foods"."id" = "orders"."food_id" WHERE "orders"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:8:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.02ms)
+Completed 200 OK in 229ms (Views: 4.2ms | ActiveRecord: 0.4ms | Allocations: 2879)
+
+
+Started GET "/me" for 127.0.0.1 at 2023-03-29 22:52:00 +0300
+Processing by UsersController#show as */*
+  Parameters: {"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"masuu", "email"=>"masu@gmail.com"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 404 Not Found in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 215)
+
+
+Started GET "/me" for 127.0.0.1 at 2023-03-29 22:53:18 +0300
+Processing by UsersController#show as */*
+  Parameters: {"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"masuu", "email"=>"masu@gmail.com"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 404 Not Found in 2ms (Views: 1.0ms | ActiveRecord: 0.9ms | Allocations: 481)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-03-29 22:53:25 +0300
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]", "session"=>{"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "masu@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:8:in `create'
+[active_model_serializers]   [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods" INNER JOIN "orders" ON "foods"."id" = "orders"."food_id" WHERE "orders"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:8:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (13.65ms)
+Completed 200 OK in 247ms (Views: 14.4ms | ActiveRecord: 1.1ms | Allocations: 12588)
+
+
+Started GET "/login" for 127.0.0.1 at 2023-03-29 22:54:12 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+Started GET "/me" for 127.0.0.1 at 2023-03-29 22:54:22 +0300
+Processing by UsersController#show as */*
+  Parameters: {"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"masuu", "email"=>"masu@gmail.com"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 404 Not Found in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 214)
+
+
+Started POST "/me" for 127.0.0.1 at 2023-03-29 22:57:49 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/me"):
+  
+Started POST "/login" for 127.0.0.1 at 2023-03-29 22:57:54 +0300
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]", "session"=>{"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "masu@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:8:in `create'
+[active_model_serializers]   [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods" INNER JOIN "orders" ON "foods"."id" = "orders"."food_id" WHERE "orders"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:8:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (18.51ms)
+Completed 200 OK in 319ms (Views: 34.2ms | ActiveRecord: 1.8ms | Allocations: 60447)
+
+
+Started GET "/me" for 127.0.0.1 at 2023-03-29 22:58:08 +0300
+Processing by UsersController#show as */*
+  Parameters: {"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"masuu", "email"=>"masu@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14:in `show'
+[active_model_serializers]   [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:15:in `show'
+[active_model_serializers]   [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods" INNER JOIN "orders" ON "foods"."id" = "orders"."food_id" WHERE "orders"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:15:in `show'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (7.26ms)
+Completed 200 OK in 11ms (Views: 7.6ms | ActiveRecord: 0.6ms | Allocations: 2991)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2023-03-29 22:59:26 +0300
+Processing by SessionsController#destroy as */*
+  Parameters: {"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]", "session"=>{"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]"}}
+Completed 204 No Content in 1ms (Allocations: 221)
+
+
+Started GET "/users" for 127.0.0.1 at 2023-03-29 22:59:42 +0300
+Processing by UsersController#index as */*
+  Parameters: {"username"=>"masuu", "email"=>"masu@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"masuu", "email"=>"masu@gmail.com"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.92ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 1.4ms | Allocations: 3393)
+
+

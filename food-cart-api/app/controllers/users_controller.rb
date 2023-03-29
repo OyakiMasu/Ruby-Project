@@ -11,7 +11,7 @@ rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
 
     # GET  /users/:id
     def show
-        user = User.find(params[:id])
+        user = User.find(session[:user_id])
         render json: user, status: :ok
     end
 
@@ -19,6 +19,7 @@ rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
     def create
         user = User.create(user_params)
         if user.valid?
+            session[:user_id] = user.id
             render json: user, status: :created
         else
             render json: { errors: user.errors.full_messages }, status: :unprocessable_entity
