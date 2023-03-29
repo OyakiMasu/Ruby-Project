@@ -3523,3 +3523,18 @@ Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.5ms | Allocations: 
 NameError (Rails couldn't find a valid model for Users association. Please provide the :class_name option on the association declaration. If :class_name is already provided, make sure it's an ActiveRecord::Base subclass.):
   
 app/controllers/orders_controller.rb:4:in `index'
+Started GET "/orders" for 127.0.0.1 at 2023-03-29 11:26:13 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.99ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.6ms | Allocations: 49543)
+
+
+  
+NoMethodError (undefined method `users' for #<Order id: 1, quantity: 0, food_id: 5, user_id: 4, price: 2408, cart_id: 5, created_at: "2023-03-28 21:57:02.980716000 +0000", updated_at: "2023-03-28 21:57:02.980716000 +0000">
+Did you mean?  user
+               user=):
+  
+app/controllers/orders_controller.rb:4:in `index'

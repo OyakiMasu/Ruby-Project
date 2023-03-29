@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-    has_many :orders, dependent: :destroy
+    has_many :foods
     has_many :foods, through: :order
 
     validates :email, presence: true, uniqueness: true
