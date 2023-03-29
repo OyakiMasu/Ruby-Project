@@ -1,5 +1,6 @@
 class OrderSerializer < ActiveModel::Serializer
-  attributes :id, :description, :quantity, :price, :cart_id, :food_id, :user_id
+  attributes :id, :quantity, :price, :cart_id, :food_id, :user_id
 
-  belongs_to :users
+  belongs_to :user
+  belongs_to :food
 end
