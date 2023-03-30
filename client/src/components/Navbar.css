@@ -1,5 +1,4 @@
 .navbar {
-<<<<<<< HEAD
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -106,14 +105,14 @@ button[type="submit"] {
   margin-right: 10px;
   border-radius: 50%;
 }
-=======
-    display: flex;
+   /* {
+     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #EDEDED;
     color: #fff;
     padding: 10px;
-  }
+  } */
   
   .navbar-nav {
     display: flex;
@@ -214,4 +213,3 @@ button[type="submit"] {
     border-radius: 50%;
   }
   
->>>>>>> development
