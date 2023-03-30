@@ -36,7 +36,7 @@ The following technologies were used to build the food cart frontend:
 # Contributors
 Cynthia Jepkoskei
 
-Victor Kariuki
+Victor Nganga
 
 Zaki Mathu
 
