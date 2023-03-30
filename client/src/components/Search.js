@@ -6,7 +6,7 @@ const Search = () => {
   const [products, setProducts] = useState([]);
 
   const handleSearch = async () => {
-    const res = await axios.get(`https://vickyprinz.github.io/db.json`);
+    const res = await axios.get(`http://localhost:3000`);
     const filteredProducts = res.data.cakes.filter((product) =>
       product.name.toLowerCase().includes(searchTerm.toLowerCase())
     );

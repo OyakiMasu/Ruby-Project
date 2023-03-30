@@ -46,7 +46,10 @@ const Home = () => {
     
     <div className="container">
       <Navbar />
+<<<<<<< HEAD
       
+=======
+>>>>>>> development
       <div className="mx-auto d-flex justify-content-center">
   <Carousel interval={3000}>
     <Carousel.Item>
@@ -75,6 +78,10 @@ const Home = () => {
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> development
       <h1>Best Seller</h1>
       <div className="row">
         {products && products.length > 0 ? (
