@@ -1,4 +1,5 @@
 class CartsController < ApplicationController
+    before_action :authorize, only: [:index, :show]
     # rescue
 rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
     def index
