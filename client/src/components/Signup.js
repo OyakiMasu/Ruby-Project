@@ -1,3 +1,5 @@
+
+
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import { useNavigate, Link } from "react-router-dom";
@@ -31,7 +33,6 @@ const Container = styled.div`
   background-color: #fff;
   border-radius: 8px;
   animation: ${slideIn} 0.5s forwards;
-
   ${({ isHidden }) =>
     isHidden &&
     `
@@ -87,6 +88,7 @@ const CustomLink = styled(Link)`
 
 function Signup() {
   const [formData, setFormData] = useState({
+    username: "",
     email: "",
     password: "",
     confirmPassword: "",
@@ -107,14 +109,44 @@ function Signup() {
       setMessage("Passwords do not match");
       return;
     }
-    nav("/home");
-    setMessage("Signup successful");
+  
+    fetch("http://127.0.0.1:3000/signup", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error("Signup failed");
+        }
+      })
+      .then((data) => {
+        nav("/home");
+        setMessage("Signup successful");
+      })
+      .catch((error) => {
+        setMessage("Signup failed");
+        console.error(error);
+      });
   }
+  
 
   return (
     <Container>
       <Title>Sign up</Title>
       <Form onSubmit={handleSubmit}>
+      <Input
+          type="username"
+          placeholder="User Name"
+          name="username"
+          id="username"
+          onChange={handleChange}
+          value={formData.username}
+        />
         <Input
           type="email"
           placeholder="Email Address"
