@@ -1,4 +1,5 @@
 class FoodsController < ApplicationController
+
     # get /foods
     def index 
         foods = Food.all
