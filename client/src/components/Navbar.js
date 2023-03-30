@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa';
+import { MdAccountCircle } from 'react-icons/md';
 import './Navbar.css';
 
 const SearchBar = () => {
@@ -26,18 +27,27 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
+      <div className="navbar-logo">
+        <Link to="/">
+          <img src="https://img.freepik.com/premium-vector/bakery-logo-template_441059-121.jpg?w=2000" alt="Your Logo" />
+        </Link>
+      </div>
       <ul className="navbar-nav">
-        <li className="nav-item">
-          <Link className="nav-link" to="/login">Log out</Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" to="/cart">
-            <div className="cart-icon">
-              <FaShoppingCart size={24} />
-              <span className="badge">{cartCount}</span>
-            </div>
-          </Link>
-        </li>
+        <div className="navbar-icons">
+          <li className="nav-item">
+            <Link className="nav-link" to="/login">
+              <MdAccountCircle size={24} />
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/cart">
+              <div className="cart-icon">
+                <FaShoppingCart size={24} />
+                <span className="badge">{cartCount}</span>
+              </div>
+            </Link>
+          </li>
+        </div>
       </ul>
       <div className="navbar-search">
         <SearchBar />
