@@ -2,7 +2,7 @@ class FoodsController < ApplicationController
     # get /foods
     def index 
         foods = Food.all
-        render json: foods, status: :ok
+        render json: foods, include: :foods, status: :ok
     end
     # SHOW /foods/{id}
     def show

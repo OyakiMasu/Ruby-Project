@@ -3,12 +3,12 @@ class CartsController < ApplicationController
 rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
     def index
         carts = Cart.all
-        render json: carts
+        render json: carts, include: :carts, status: :ok
     end
     # SHOW /carts/{id} => include orders as children
     def show
         cart = find_cart
-        render json: cart, status: :ok
+        render json: cart, include: :orders, status: :ok
     end
 
 
