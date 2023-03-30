@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import { useNavigate, Link } from "react-router-dom";
+import axios from "axios";
 
 const slideIn = keyframes`
   from {
@@ -100,19 +101,29 @@ function Login() {
     });
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
     // validate form data, e.g. check if email and password are not empty
     if (!formData.email || !formData.password) {
       setMessage("Please enter your email and password");
       return;
     }
-    // simulate login with hardcoded credentials
-    if (formData.email === "user@example.com" && formData.password === "password") {
-      nav("/home");
-      setMessage("Login successful");
-    } else {
-      setMessage("Invalid email or password");
+
+    try {
+      // send login request to backend
+      const response = await axios.post("http://127.0.0.1:3000/login", {
+        email: formData.email,
+        password: formData.password,
+      });
+
+      // navigate to home page if login is successful
+      if (response.status === 200) {
+        nav("/home");
+      } else {
+        setMessage("Invalid email or password");
+      }
+    } catch (error) {
+      setMessage("Login failed");
     }
   }
 
@@ -125,29 +136,26 @@ function Login() {
           placeholder="Email Address"
           name="email"
           id="email"
+          
           onChange={handleChange}
           value={formData.email}
-        />
-        <Input
-          type="password"
-          placeholder="Password"
-          name="password"
-          id="password"
-          onChange={handleChange}
-          value={formData.password}
-        />
-        <Button type="submit">Login</Button>
-      {message && (
-        <Message isError={message.startsWith("Invalid")}>
-          {message}
-        </Message>
-      )}
-      <LinkWrapper>
-        <span>Don't have an account?</span>{" "}
-        <CustomLink to="/signup">Register here</CustomLink>
-      </LinkWrapper>
-    </Form>
-  </Container>
-);
-      }
-export default Login;
+          />
+          <Input
+                 type="password"
+                 placeholder="Password"
+                 name="password"
+                 id="password"
+                 onChange={handleChange}
+                 value={formData.password}
+               />
+          <Button type="submit">Login</Button>
+          </Form>
+          {message && <Message isError={message.startsWith("Invalid")}>{message}</Message>}
+          <LinkWrapper>
+          Don't have an account? <CustomLink to="/signup">Register</CustomLink>
+          </LinkWrapper>
+          </Container>
+          );
+          }
+          
+          export default Login;

@@ -1,3 +1,5 @@
+
+
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import { useNavigate, Link } from "react-router-dom";
@@ -31,7 +33,6 @@ const Container = styled.div`
   background-color: #fff;
   border-radius: 8px;
   animation: ${slideIn} 0.5s forwards;
-
   ${({ isHidden }) =>
     isHidden &&
     `
