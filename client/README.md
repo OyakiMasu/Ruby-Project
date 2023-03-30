@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# README.md
+This is a frontend application for a food cart website built using React. The website allows users to view the menu, place orders and make payments.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Installation
+To install the application , you'll need to clone the repository and run the following command.
 
-## Available Scripts
+   *npm install*
+   This will install all the dependencies required for the application.
 
-In the project directory, you can run:
+# Usage
+To start the application , run the following command:
 
-### `npm start`
+   *npm start*   
+   This will start the application on http://localhost:3000
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Features
+The food cart frontend application has the following features:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  Menu: Users can view the menu with all the available food items.
 
-### `npm test`
+  Order: Users can select the food items they want to order and add them to the cart.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  Cart: Users can view their cart and modify the quantity of each item.
 
-### `npm run build`
+  Checkout: Users can checkout and make payments using a secure payment gateway.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Technologies Used
+The following technologies were used to build the food cart frontend:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  React: A JavaScript library for building user interfaces.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  React Router: A library for managing the application's routes.
 
-### `npm run eject`
+  Bootstrap: A CSS framework for building responsive and mobile-first websites.  
+# Contributors
+Cynthia Jepkoskei
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Victor Kariuki
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Zaki Mathu
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Joy Kirui
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# License
+The project is licensed under the MIT license.
