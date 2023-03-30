@@ -5,6 +5,7 @@ This is a frontend application for a food cart website built using React. The we
 To install the application , you'll need to clone the repository and run the following command.
 
    *npm install*
+   
    This will install all the dependencies required for the application.
 
 # Usage
