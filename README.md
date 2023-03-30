@@ -12,6 +12,8 @@
 ![Byebug](https://img.shields.io/badge/Byebug-3.1.4-green?style=for-the-badge&logo=ruby&logoColor=white)
 
 # The Bakery App 
+![GitHub closed issues](https://img.shields.io/github/issues-closed/OyakiMasu/Ruby-Project?color=success&label=Closed%20Issues&logo=github&style=for-the-badge)
+
 ![GitHub issues](https://img.shields.io/github/issues/OyakiMasu/Ruby-Project)
 ![GitHub contributors](https://img.shields.io/github/contributors/OyakiMasu/Ruby-Project?color=green)
 ![GitHub repo size](https://img.shields.io/github/repo-size/OyakiMasu/Ruby-Project?color=violet)
