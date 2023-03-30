@@ -16,7 +16,7 @@ end
     User.create(
         username: Faker::Internet.username,
         email: Faker::Internet.email,
-        password_digest: Faker::Internet.password,
+        password: Faker::Internet.password,
         image_url: Faker::LoremFlickr.image
     )
 end

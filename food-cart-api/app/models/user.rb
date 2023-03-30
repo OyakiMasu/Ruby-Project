@@ -1,8 +1,17 @@
 class User < ApplicationRecord
+    has_secure_password
     has_many :orders
     has_many :foods, through: :orders
 
-    validates :email, presence: true, uniqueness: true
-    validates :username, presence: true, uniqueness: true
-    validates :password_digest, presence: true, length: {minimum: 8}
+    validates :username, {
+        length: { minimum: 5, maximum: 8 },
+         uniqueness: true, 
+         presence: true
+   }
+
+   validates :email, { 
+       uniqueness: true, 
+       presence: true
+   }
+   
 end
