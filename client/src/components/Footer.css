@@ -1,0 +1,155 @@
+#footer-top {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+  }
+  
+  .main-menu {
+    background-color: #fff;
+    padding: 10px 0;
+  }
+  
+  .head-nav {
+    float: left;
+  }
+  
+  .menu {
+    background: url no-repeat;
+    display: inline-block;
+    height: 18px;
+    width: 30px;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 8px 12px;
+  }
+  
+  li a {
+    color: #666;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    color: #000;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    margin-top: 50px;
+    padding: 30px 0;
+  }
+  
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .location, .customer, .social, .sign {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .location h4,
+  .customer h4,
+  .social h4,
+  .sign h4 {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 0;
+    padding-bottom: 20px;
+  }
+  
+  .location p,
+  .customer p,
+  .sign form {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .location h4,
+  .customer h4,
+  .social h4,
+  .sign h4,
+  .sign input[type="text"] {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .location h4:after,
+  .customer h4:after,
+  .social h4:after,
+  .sign h4:after {
+    background-color: #fff;
+    content: '';
+    display: block;
+    height: 1px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .location h4:before,
+  .customer h4:before,
+  .social h4:before,
+  .sign h4:before {
+    background-color: #fff;
+    content: '';
+    display: block;
+    height: 1px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .social {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .face-b, .twet {
+    margin-bottom: 20px;
+  }
+  
+  .small-icon {
+    height: 20px;
+    margin-right: 10px;
+    width: 20px;
+  }
+  
+  .fb:before {
+    background: url no-repeat;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    content: '';
+  }
+  
+  .twt:before {
+    background: url no-repeat;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    content: '';
+  }
+  
+  .sign input[type="text"] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 100%;
+  }
+  
+  .sign input[type="text"]:focus {
+    outline: none;
+  }
+  
