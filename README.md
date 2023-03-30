@@ -40,5 +40,22 @@ This application has been built with the following tools:
 - **BCrypt `v3.1.16`**
 - **Byebug `v11.1.3,`**  
 
+<strong>For more on client and Api enter :<strong>
+- [food-cart-api](./food-cart-api/)
+- [client](./client/)
+
+
+## LICENSE
+This repository is distributed under the MIT License
+
+## Contributing Members
+- [Victor Kariuki](https://github.com/Victorprinz) 
+- [Joy Cherotich](https://github.com/joycherotich) 
+- [Cindy Misoi](https://github.com/CindyMisoi) 
+
+## Author
+This repository is maintained by:
+
+- [Zaki Mathu](https://github.com/OyakiMasu) 
 
 
