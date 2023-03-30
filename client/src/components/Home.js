@@ -46,8 +46,7 @@ const Home = () => {
     
     <div className="container">
       <Navbar />
-      
-      <div className="mx-auto">
+      <div className="mx-auto d-flex justify-content-center">
   <Carousel interval={3000}>
     <Carousel.Item>
       <img
@@ -72,6 +71,8 @@ const Home = () => {
     </Carousel.Item>
   </Carousel>
 </div>
+
+
 
 
       <h1>Best Seller</h1>
