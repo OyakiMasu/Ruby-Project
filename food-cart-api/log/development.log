@@ -8474,6 +8474,81 @@ Processing by CartsController#index as */*
 Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.9ms | Allocations: 6673)
 
 
+<<<<<<< HEAD
+Started GET "/ws" for ::1 at 2023-03-30 10:41:05 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2023-03-30 10:41:14 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2023-03-30 10:41:31 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2023-03-30 10:42:04 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2023-03-30 10:43:09 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2023-03-30 10:45:18 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/" for ::1 at 2023-03-30 10:45:56 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/victor/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/victor/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.1ms | Allocations: 457)
+Completed 200 OK in 25ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 3883)
+
+
+Started GET "/" for ::1 at 2023-03-30 10:45:56 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/victor/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/victor/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.3ms | Allocations: 448)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 1136)
+
+
+Started GET "/ws" for ::1 at 2023-03-30 10:49:35 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/" for ::1 at 2023-03-30 10:50:27 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/victor/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/victor/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | Allocations: 15)
+Completed 200 OK in 2ms (Views: 1.4ms | Allocations: 195)
+
+
+Started GET "/" for ::1 at 2023-03-30 10:50:27 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/victor/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/victor/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | Allocations: 15)
+Completed 200 OK in 1ms (Views: 0.9ms | Allocations: 193)
+
+
+Started GET "/ws" for ::1 at 2023-03-30 10:58:08 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/" for 127.0.0.1 at 2023-03-30 14:33:31 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as */*
+  Rendering /home/victor/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/victor/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.7ms | Allocations: 660)
+Completed 200 OK in 40ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 5332)
+
+
+Started GET "/login" for 127.0.0.1 at 2023-03-30 14:34:02 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+=======
 Started GET "/users" for 127.0.0.1 at 2023-03-30 12:33:34 +0300
   [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by UsersController#index as */*
@@ -9781,3 +9856,4 @@ Processing by UsersController#create as */*
 Completed 422 Unprocessable Entity in 2622ms (Views: 8.3ms | ActiveRecord: 2.4ms | Allocations: 1070824)
 
 
+>>>>>>> development

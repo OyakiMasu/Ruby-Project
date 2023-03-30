@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #EDEDED;
     color: #fff;
     padding: 10px;
   }
@@ -19,7 +19,7 @@
   }
   
   .nav-link {
-    color: #fff;
+    color: #313030;
     text-decoration: none;
     padding: 5px;
     position: relative;
@@ -49,11 +49,9 @@
   }
   
   input[type="text"] {
-    padding: 5px;
-    border: none;
-    border-radius: 3px;
-    margin-right: 5px;
+    outline: 2px solid #FD6F01;
   }
+  
   
   button[type="submit"] {
     padding: 5px;
@@ -63,10 +61,11 @@
     color: #fff;
   }
   
-  .cart-icon {
+  /* .cart-icon {
     position: relative;
+    background: #D9D9D966;
     cursor: pointer;
-  }
+  } */
   
   .cart-icon .badge {
     position: absolute;
@@ -76,5 +75,34 @@
     color: #fff;
     border-radius: 50%;
     padding: 3px 6px;
+  }
+  /* .cart-icon {
+    background-color: #292828;
+  }
+  
+  .cart-icon:hover {
+    background-color: #5a5959;
+  } */
+  .navbar-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-icon, .user-icon {
+    margin: 0 10px;
+  }
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo img {
+    max-width: 100px;
+    margin-right: 10px;
+  }
+  .navbar-logo img {
+    max-width: 100px;
+    margin-right: 10px;
+    border-radius: 50%;
   }
   
