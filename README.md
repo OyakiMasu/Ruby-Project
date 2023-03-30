@@ -22,11 +22,14 @@
 ## Pre-Requisites
 In order to use this repository you will need the following:
 
+![Windows](https://img.shields.io/badge/Windows-10%2B-blue?style=for-the-badge&logo=windows&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-3.8%2B-green?style=for-the-badge&logo=linux&logoColor=white)
+![MacOS X](https://img.shields.io/badge/MacOS_X-10.7%2B-999999?style=for-the-badge&logo=apple&logoColor=white)
+
+
 - Operating System **(Windows `10+`, Linux `3.8+`, or MacOS X `10.7+`)**
 - RAM >= 4GB
 - Free Space >= 2GB
-
-
 
 ## Built With
 This application has been built with the following tools:
