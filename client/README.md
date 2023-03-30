@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+![React.js](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-5.2.1-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Bakery App Client
+- This is a frontend application for a food cart website built using React. The website allows users to view the menu, place orders and make payments.
 
-## Available Scripts
+## Setup Instructions
+- Clone the repository
 
-In the project directory, you can run:
+        git@github.com:OyakiMasu/Ruby-Project.git
 
-### `npm start`
+- Navigate to the the project folder using the following command
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+        cd client
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage
+- To run the front-end part first ensure that you run
 
-### `npm test`
+        npm install 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- To start the application run 
 
-### `npm run build`
+        npm start 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- This will start the application on http://localhost:3000
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features
+* The food cart frontend application has the following features:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Menu: Users can view the menu with all the available food items.
 
-### `npm run eject`
+* Order: Users can select the food items they want to order and add them to the cart.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Cart: Users can view their cart and modify the quantity of each item.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Checkout: Users can checkout and make payments using a secure payment gateway.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Technologies Used
+The following technologies were used to build the food cart frontend:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **React.js` v17.0.2`**   : A JavaScript library for building user interfaces.
 
-## Learn More
+- **React Router` v5.2.1`**   : React Router: A library for managing the application's routes.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Bootstrap ` v5.3.0`** : A CSS framework for building responsive and mobile-first websites.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributors
 
-### Code Splitting
+- [Joy Cherotich](https://github.com/joycherotich) 
+- [Victor Kariuki](https://github.com/Victorprinz) 
+- [Cindy Misoi](https://github.com/CindyMisoi) 
+- [Zaki Mathu](https://github.com/OyakiMasu) 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## License
+[![License:MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-### Making a Progressive Web App
+```
+MIT License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Copyright (c) 2023  
 
-### Advanced Configuration
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-### Deployment
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Copyright (c) 2023 
