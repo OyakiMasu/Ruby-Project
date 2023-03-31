@@ -149,17 +149,6 @@ If the `User` exists, return JSON data in the format below:
 }
 ```
 
-If the `Power` exists and is updated successfully (passes validations), update
-its description and return JSON data in the format below:
-
-```
-{
-  "id": 1,
-  "name": "super strength",
-  "description": "Updated description"
-}
-```
-
  POST /orders
 This route should create a new `Order` that is associated with an
 existing `Food` and `Cart`. It should accept an object with the following
