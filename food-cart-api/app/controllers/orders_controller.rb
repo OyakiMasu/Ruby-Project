@@ -39,6 +39,6 @@ def render_not_found_response
     render json: {error: "Order not found"}, status: :not_found
 end
 def render_unprocessable_entity
-    render json: {error: "Validity errors"}, status: :unprocessable_entity
+    render json: {error: "Validation errors"}, status: :unprocessable_entity
 end
 end

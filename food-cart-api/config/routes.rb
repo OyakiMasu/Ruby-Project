@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
   resources :categories, only: [:index, :show]
-=======
-  # Carts
->>>>>>> development
   resources :carts, only:[:index, :show]
 
   # Orders

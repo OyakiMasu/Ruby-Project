@@ -27597,3 +27597,1053 @@ Completed 200 OK in 283ms (Views: 5.0ms | ActiveRecord: 0.4ms | Allocations: 277
 >>>>>>> development
 >>>>>>> development
 >>>>>>> development
+Started GET "/ws" for ::1 at 2023-03-31 17:59:31 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 11 pending migrations:
+
+20230330154200_remove_quantity_from_order.rb
+20230330154307_add_quantity_to_carts.rb
+20230330154353_remove_total_quantity_from_carts.rb
+20230330161846_add_quantity_to_orders.rb
+20230330165043_remove_quantity_from_carts.rb
+20230330165202_add_total_price_to_orders.rb
+20230330182444_create_categories.rb
+20230330184140_add_category_id_to_foods.rb
+20230330193554_remove_total_price_from_orders.rb
+20230330193930_add_subtotals_to_carts.rb
+20230330194304_add_user_id_to_carts.rb
+
+
+):
+  
+activerecord (7.0.4.3) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.3) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.3) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.3) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (2.0.1) lib/rack/cors.rb:102:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/signup" for 127.0.0.1 at 2023-03-31 18:03:07 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 11 pending migrations:
+
+20230330154200_remove_quantity_from_order.rb
+20230330154307_add_quantity_to_carts.rb
+20230330154353_remove_total_quantity_from_carts.rb
+20230330161846_add_quantity_to_orders.rb
+20230330165043_remove_quantity_from_carts.rb
+20230330165202_add_total_price_to_orders.rb
+20230330182444_create_categories.rb
+20230330184140_add_category_id_to_foods.rb
+20230330193554_remove_total_price_from_orders.rb
+20230330193930_add_subtotals_to_carts.rb
+20230330194304_add_user_id_to_carts.rb
+
+
+):
+  
+activerecord (7.0.4.3) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.3) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.3) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.3) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (2.0.1) lib/rack/cors.rb:102:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/signup" for 127.0.0.1 at 2023-03-31 18:05:56 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 11 pending migrations:
+
+20230330154200_remove_quantity_from_order.rb
+20230330154307_add_quantity_to_carts.rb
+20230330154353_remove_total_quantity_from_carts.rb
+20230330161846_add_quantity_to_orders.rb
+20230330165043_remove_quantity_from_carts.rb
+20230330165202_add_total_price_to_orders.rb
+20230330182444_create_categories.rb
+20230330184140_add_category_id_to_foods.rb
+20230330193554_remove_total_price_from_orders.rb
+20230330193930_add_subtotals_to_carts.rb
+20230330194304_add_user_id_to_carts.rb
+
+
+):
+  
+activerecord (7.0.4.3) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.3) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.3) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.3) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (2.0.1) lib/rack/cors.rb:102:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/ws" for ::1 at 2023-03-31 18:08:04 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 11 pending migrations:
+
+20230330154200_remove_quantity_from_order.rb
+20230330154307_add_quantity_to_carts.rb
+20230330154353_remove_total_quantity_from_carts.rb
+20230330161846_add_quantity_to_orders.rb
+20230330165043_remove_quantity_from_carts.rb
+20230330165202_add_total_price_to_orders.rb
+20230330182444_create_categories.rb
+20230330184140_add_category_id_to_foods.rb
+20230330193554_remove_total_price_from_orders.rb
+20230330193930_add_subtotals_to_carts.rb
+20230330194304_add_user_id_to_carts.rb
+
+
+):
+  
+activerecord (7.0.4.3) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.3) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.3) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.3) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (2.0.1) lib/rack/cors.rb:102:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/signup" for 127.0.0.1 at 2023-03-31 18:08:47 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 11 pending migrations:
+
+20230330154200_remove_quantity_from_order.rb
+20230330154307_add_quantity_to_carts.rb
+20230330154353_remove_total_quantity_from_carts.rb
+20230330161846_add_quantity_to_orders.rb
+20230330165043_remove_quantity_from_carts.rb
+20230330165202_add_total_price_to_orders.rb
+20230330182444_create_categories.rb
+20230330184140_add_category_id_to_foods.rb
+20230330193554_remove_total_price_from_orders.rb
+20230330193930_add_subtotals_to_carts.rb
+20230330194304_add_user_id_to_carts.rb
+
+
+):
+  
+activerecord (7.0.4.3) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.3) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.3) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.3) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (2.0.1) lib/rack/cors.rb:102:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveQuantityFromOrder (20230330154200)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "quantity" integer DEFAULT NULL, "food_id" integer DEFAULT NULL, "user_id" integer DEFAULT NULL, "price" integer DEFAULT NULL, "cart_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "aorders" ("id","quantity","food_id","user_id","price","cart_id","created_at","updated_at")
+                     SELECT "id","quantity","food_id","user_id","price","cart_id","created_at","updated_at" FROM "orders"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer NOT NULL PRIMARY KEY, "food_id" integer DEFAULT NULL, "user_id" integer DEFAULT NULL, "price" integer DEFAULT NULL, "cart_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "orders" ("id","food_id","user_id","price","cart_id","created_at","updated_at")
+                     SELECT "id","food_id","user_id","price","cart_id","created_at","updated_at" FROM "aorders"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aorders"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230330154200"]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddQuantityToCarts (20230330154307)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "carts" ADD "quantity" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230330154307"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to RemoveTotalQuantityFromCarts (20230330154353)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "acarts" ("id" integer NOT NULL PRIMARY KEY, "total_price" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "total_quantity" integer DEFAULT NULL, "quantity" integer DEFAULT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "acarts" ("id","total_price","created_at","updated_at","total_quantity","quantity")
+                     SELECT "id","total_price","created_at","updated_at","total_quantity","quantity" FROM "carts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "carts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "carts" ("id" integer NOT NULL PRIMARY KEY, "total_price" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "quantity" integer DEFAULT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "carts" ("id","total_price","created_at","updated_at","quantity")
+                     SELECT "id","total_price","created_at","updated_at","quantity" FROM "acarts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "acarts"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230330154353"]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddQuantityToOrders (20230330161846)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "orders" ADD "quantity" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230330161846"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to RemoveQuantityFromCarts (20230330165043)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "acarts" ("id" integer NOT NULL PRIMARY KEY, "total_price" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "quantity" integer DEFAULT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "acarts" ("id","total_price","created_at","updated_at","quantity")
+                     SELECT "id","total_price","created_at","updated_at","quantity" FROM "carts"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "carts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "carts" ("id" integer NOT NULL PRIMARY KEY, "total_price" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "carts" ("id","total_price","created_at","updated_at")
+                     SELECT "id","total_price","created_at","updated_at" FROM "acarts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "acarts"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230330165043"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddTotalPriceToOrders (20230330165202)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "orders" ADD "total_price" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230330165202"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateCategories (20230330182444)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "categories" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230330182444"]]
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddCategoryIdToFoods (20230330184140)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "foods" ADD "category_id" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230330184140"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to RemoveTotalPriceFromOrders (20230330193554)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorders" ("id" integer NOT NULL PRIMARY KEY, "food_id" integer DEFAULT NULL, "user_id" integer DEFAULT NULL, "price" integer DEFAULT NULL, "cart_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "quantity" integer DEFAULT NULL, "total_price" integer DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aorders" ("id","food_id","user_id","price","cart_id","created_at","updated_at","quantity","total_price")
+                     SELECT "id","food_id","user_id","price","cart_id","created_at","updated_at","quantity","total_price" FROM "orders"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer NOT NULL PRIMARY KEY, "food_id" integer DEFAULT NULL, "user_id" integer DEFAULT NULL, "price" integer DEFAULT NULL, "cart_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "quantity" integer DEFAULT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "orders" ("id","food_id","user_id","price","cart_id","created_at","updated_at","quantity")
+                     SELECT "id","food_id","user_id","price","cart_id","created_at","updated_at","quantity" FROM "aorders"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aorders"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230330193554"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddSubtotalsToCarts (20230330193930)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "carts" ADD "subtotals" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230330193930"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddUserIdToCarts (20230330194304)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "carts" ADD "user_id" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230330194304"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/signup" for ::1 at 2023-03-31 18:10:03 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/signup"):
+  
+Started GET "/favicon.ico" for ::1 at 2023-03-31 18:10:04 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/signup" for 127.0.0.1 at 2023-03-31 18:10:43 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"cindymisoi", "email"=>"crmisoi2k@gmail.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "user"=>{"username"=>"cindymisoi", "email"=>"crmisoi2k@gmail.com"}}
+[31mUnpermitted parameters: :confirmPassword, :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x00007f8d94018de8>, params: {"username"=>"cindymisoi", "email"=>"crmisoi2k@gmail.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "controller"=>"users", "action"=>"create", "user"=>{"username"=>"cindymisoi", "email"=>"crmisoi2k@gmail.com"}} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cindymisoi"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "crmisoi2k@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cindymisoi"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "crmisoi2k@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 422 Unprocessable Entity in 427ms (Views: 1.8ms | ActiveRecord: 0.9ms | Allocations: 363313)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-03-31 18:11:03 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"cindymisoi", "email"=>"crmisoi2k@gmail.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "user"=>{"username"=>"cindymisoi", "email"=>"crmisoi2k@gmail.com"}}
+[31mUnpermitted parameters: :confirmPassword, :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x00007f8d88018a48>, params: {"username"=>"cindymisoi", "email"=>"crmisoi2k@gmail.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "controller"=>"users", "action"=>"create", "user"=>{"username"=>"cindymisoi", "email"=>"crmisoi2k@gmail.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cindymisoi"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "crmisoi2k@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cindymisoi"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "crmisoi2k@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 422 Unprocessable Entity in 213ms (Views: 0.4ms | ActiveRecord: 0.5ms | Allocations: 4470)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-03-31 18:11:57 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"cindy", "email"=>"crmisoi2k@gmail.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "user"=>{"username"=>"cindy", "email"=>"crmisoi2k@gmail.com"}}
+[31mUnpermitted parameters: :confirmPassword, :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x00007f8d8ccb45a0>, params: {"username"=>"cindy", "email"=>"crmisoi2k@gmail.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "controller"=>"users", "action"=>"create", "user"=>{"username"=>"cindy", "email"=>"crmisoi2k@gmail.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cindy"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "crmisoi2k@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "cindy"], ["email", "crmisoi2k@gmail.com"], ["password_digest", "[FILTERED]"], ["image_url", nil], ["created_at", "2023-03-31 15:11:57.961523"], ["updated_at", "2023-03-31 15:11:57.961523"]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mTRANSACTION (10.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "cindy"], ["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "crmisoi2k@gmail.com"], ["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `create'
+[active_model_serializers]   [1m[36mCart Load (0.1ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:24:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (25.29ms)
+Completed 201 Created in 269ms (Views: 35.1ms | ActiveRecord: 11.1ms | Allocations: 22839)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-03-31 18:13:47 +0300
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"cindy", "email"=>"crmisoi2k@gmail.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "user"=>{"username"=>"cindy", "email"=>"crmisoi2k@gmail.com"}}
+[31mUnpermitted parameters: :confirmPassword, :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x00007f8d803cb918>, params: {"username"=>"cindy", "email"=>"crmisoi2k@gmail.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "controller"=>"users", "action"=>"create", "user"=>{"username"=>"cindy", "email"=>"crmisoi2k@gmail.com"}} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cindy"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "crmisoi2k@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cindy"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "crmisoi2k@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.04ms)
+Completed 422 Unprocessable Entity in 212ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 4975)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-03-31 18:15:46 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"crmisoi2k@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"crmisoi2k@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "crmisoi2k@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+[active_model_serializers]   [1m[36mCart Load (0.1ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/sessions_controller.rb:8:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1.5ms)
+Completed 200 OK in 210ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 2081)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-31 18:53:46 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/user/.rvm/gems/ruby-3.0.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/user/.rvm/gems/ruby-3.0.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.1ms | Allocations: 727)
+Completed 200 OK in 7ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 6253)
+
+
+Started GET "/foods" for 127.0.0.1 at 2023-03-31 18:53:52 +0300
+Processing by FoodsController#index as HTML
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/controllers/foods_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.6ms)
+Completed 200 OK in 19ms (Views: 14.4ms | ActiveRecord: 0.5ms | Allocations: 29022)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cakes"], ["created_at", "2023-03-31 15:55:22.986176"], ["updated_at", "2023-03-31 15:55:22.986176"]]
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.1ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Pastries"], ["created_at", "2023-03-31 15:55:22.990976"], ["updated_at", "2023-03-31 15:55:22.990976"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.1ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cookies"], ["created_at", "2023-03-31 15:55:22.994628"], ["updated_at", "2023-03-31 15:55:22.994628"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFood Create (0.2ms)[0m  [1m[32mINSERT INTO "foods" ("name", "image", "price", "star_rating", "description", "in_stock", "created_at", "updated_at", "category_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Red Velvet cake"], ["image", "https://images.unsplash.com/photo-1586788680434-30d324b2d46f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVkJTIwdmVsdmV0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"], ["price", 20], ["star_rating", 4], ["description", "Red velvet cake has endured as one of the most popular cakes in the United States.Cake's name is a descriptor of its soft, velvety texture."], ["in_stock", 1], ["created_at", "2023-03-31 15:55:23.012524"], ["updated_at", "2023-03-31 15:55:23.012524"], ["category_id", 1]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFood Create (0.1ms)[0m  [1m[32mINSERT INTO "foods" ("name", "image", "price", "star_rating", "description", "in_stock", "created_at", "updated_at", "category_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Black Forest cake"], ["image", "https://media.istockphoto.com/id/1327824483/photo/image-of-sliced-black-forest-gateau-with-piped-whipped-cream-rosettes-with-morello-cherries.jpg?b=1&s=170667a&w=0&k=20&c=PeLWsfUyUe3mliVIV1tPvbQpQmC0u_pge8kp5eFeWro="], ["price", 25], ["star_rating", 4], ["description", "Typically, Black Forest cake is made by soaking the chocolate sponge in sugar syrup flavored with cherry brandy and topped with whipped cream."], ["in_stock", 1], ["created_at", "2023-03-31 15:55:23.019000"], ["updated_at", "2023-03-31 15:55:23.019000"], ["category_id", 1]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFood Create (0.1ms)[0m  [1m[32mINSERT INTO "foods" ("name", "image", "price", "star_rating", "description", "in_stock", "created_at", "updated_at", "category_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cupcakes"], ["image", "https://media.istockphoto.com/id/1324582711/photo/chocolate-and-vanilla-mini-desserts-cream-cupcakes-panacotas.jpg?b=1&s=170667a&w=0&k=20&c=p3_ZRRf1yXrZoslETdu4itmTgCWsgVvhJBF8UUe25GU="], ["price", 5], ["star_rating", 3], ["description", "Cupcakes in general come in almost every flavor as traditional cakes, so you can customize your batch to your liking."], ["in_stock", 1], ["created_at", "2023-03-31 15:55:23.024875"], ["updated_at", "2023-03-31 15:55:23.024875"], ["category_id", 1]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mFood Create (0.1ms)[0m  [1m[32mINSERT INTO "foods" ("name", "image", "price", "star_rating", "description", "in_stock", "created_at", "updated_at", "category_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Apricot Danish"], ["image", "https://media.istockphoto.com/id/1399448503/photo/apricot-danish-pastries-on-a-white-napkin-the-cakes-are-served-in-a-tall-glass-vase-close-up.jpg?b=1&s=170667a&w=0&k=20&c=xRsdf3iC_4iOtg4Vf3XT33HSZjIc14hmnNx6XM43GFU="], ["price", 15], ["star_rating", 4], ["description", "Apricot Danishes are easy and delicious! Chopped fresh apricots on a bed of sweetened cream cheese wrapped in buttery, crispy puff pastry."], ["in_stock", 1], ["created_at", "2023-03-31 15:55:23.030347"], ["updated_at", "2023-03-31 15:55:23.030347"], ["category_id", 2]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mFood Create (0.2ms)[0m  [1m[32mINSERT INTO "foods" ("name", "image", "price", "star_rating", "description", "in_stock", "created_at", "updated_at", "category_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Chocolate tarts"], ["image", "https://media.istockphoto.com/id/480134303/photo/chocolate-tart.jpg?b=1&s=170667a&w=0&k=20&c=kT0ucWQBDGmxFMRvhMAQsv6l5jDUORazN8BQN3CUUGQ="], ["price", 15], ["star_rating", 4], ["description", "Get ready to swoon! These rich and indulgent chocolate tarts are filled with two types of chocolate."], ["in_stock", 1], ["created_at", "2023-03-31 15:55:23.036032"], ["updated_at", "2023-03-31 15:55:23.036032"], ["category_id", 2]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mFood Create (0.1ms)[0m  [1m[32mINSERT INTO "foods" ("name", "image", "price", "star_rating", "description", "in_stock", "created_at", "updated_at", "category_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Baklava"], ["image", "https://media.istockphoto.com/id/1367685040/photo/traditional-turkish-arabic-sweets-baklava-with-turkish-coffee.jpg?b=1&s=170667a&w=0&k=20&c=WDv2EjogNxFU3I3dt22BS9P3X2Q-rUBYZl4Sbxb_KCM="], ["price", 10], ["star_rating", 4], ["description", "Layer with nuts and drizzle with honey to make this wonderfully sticky Middle Eastern treat."], ["in_stock", 1], ["created_at", "2023-03-31 15:55:23.041356"], ["updated_at", "2023-03-31 15:55:23.041356"], ["category_id", 2]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mFood Create (0.1ms)[0m  [1m[32mINSERT INTO "foods" ("name", "image", "price", "star_rating", "description", "in_stock", "created_at", "updated_at", "category_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "White Chocolate Strawberry Cookies"], ["image", "https://images.unsplash.com/photo-1621236378699-8597faf6a176?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8V2hpdGUlMjBDaG9jb2xhdGUlMjBTdHJhd2JlcnJ5JTIwQ29va2llc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"], ["price", 5], ["star_rating", 4], ["description", "These cookies bring together two favorite ingredients: white chocolate and strawberry. They are perfectly sweet and chewy with fun bites of dried strawberry pieces and white chocolate chips."], ["in_stock", 1], ["created_at", "2023-03-31 15:55:23.045931"], ["updated_at", "2023-03-31 15:55:23.045931"], ["category_id", 3]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mFood Create (0.1ms)[0m  [1m[32mINSERT INTO "foods" ("name", "image", "price", "star_rating", "description", "in_stock", "created_at", "updated_at", "category_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Chocolate Chip Cookies"], ["image", "https://media.istockphoto.com/id/1367685040/photo/traditional-turkish-arabic-sweets-baklava-with-turkish-coffee.jpg?b=1&s=170667a&w=0&k=20&c=WDv2EjogNxFU3I3dt22BS9P3X2Q-rUBYZl4Sbxb_KCM="], ["price", 5], ["star_rating", 3], ["description", "You cannot go wrong with the classic chocolate chip cookie. This recipe includes melted butter, more brown sugar than white sugar, and an extra egg yolk for a chewy texture and big chocolate chunks for indulgent flavor."], ["in_stock", 1], ["created_at", "2023-03-31 15:55:23.050242"], ["updated_at", "2023-03-31 15:55:23.050242"], ["category_id", 3]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mFood Create (0.1ms)[0m  [1m[32mINSERT INTO "foods" ("name", "image", "price", "star_rating", "description", "in_stock", "created_at", "updated_at", "category_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Gingerbread Cookies"], ["image", "https://plus.unsplash.com/premium_photo-1669831178183-44b4829039d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z2luZ2VyYnJlYWQlMjBjb29raWVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"], ["price", 5], ["star_rating", 3], ["description", "They are the quintessential Christmas cookie, but gingerbread cookies are delicious anytime. With tasty warming spices, including ginger, cinnamon, ginger, and cloves, they are simply delicious and make your house smell amazing."], ["in_stock", 0], ["created_at", "2023-03-31 15:55:23.054931"], ["updated_at", "2023-03-31 15:55:23.054931"], ["category_id", 3]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "santiago_nitzsche"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "tyra.bailey@mccullough.biz"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "ronnie"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "daine.waelchi@purdy-boyle.name"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "ronnie"], ["email", "daine.waelchi@purdy-boyle.name"], ["password_digest", "[FILTERED]"], ["image_url", "https://loremflickr.com/300/300"], ["created_at", "2023-03-31 15:55:23.556799"], ["updated_at", "2023-03-31 15:55:23.556799"]]
+  [1m[36mTRANSACTION (11.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "harlan_pfannerstill"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ozzie@stiedemann.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCart Create (0.1ms)[0m  [1m[32mINSERT INTO "carts" ("total_price", "created_at", "updated_at", "subtotals", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["total_price", 0], ["created_at", "2023-03-31 15:55:23.776740"], ["updated_at", "2023-03-31 15:55:23.776740"], ["subtotals", 0], ["user_id", 8]]
+  [1m[36mTRANSACTION (15.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCart Create (0.1ms)[0m  [1m[32mINSERT INTO "carts" ("total_price", "created_at", "updated_at", "subtotals", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["total_price", 0], ["created_at", "2023-03-31 15:55:23.794335"], ["updated_at", "2023-03-31 15:55:23.794335"], ["subtotals", 0], ["user_id", 8]]
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCart Create (0.1ms)[0m  [1m[32mINSERT INTO "carts" ("total_price", "created_at", "updated_at", "subtotals", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["total_price", 0], ["created_at", "2023-03-31 15:55:23.799502"], ["updated_at", "2023-03-31 15:55:23.799502"], ["subtotals", 0], ["user_id", 8]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCart Load (0.0ms)[0m  [1m[34mSELECT "carts".* FROM "carts"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCart Load (0.0ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mOrder Create (0.1ms)[0m  [1m[32mINSERT INTO "orders" ("food_id", "user_id", "price", "cart_id", "created_at", "updated_at", "quantity") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["food_id", 13], ["user_id", 4], ["price", 5], ["cart_id", 8], ["created_at", "2023-03-31 15:55:23.812998"], ["updated_at", "2023-03-31 15:55:23.812998"], ["quantity", 1]]
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFood Load (0.0ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCart Load (0.0ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mOrder Create (0.1ms)[0m  [1m[32mINSERT INTO "orders" ("food_id", "user_id", "price", "cart_id", "created_at", "updated_at", "quantity") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["food_id", 13], ["user_id", 4], ["price", 5], ["cart_id", 8], ["created_at", "2023-03-31 15:55:23.818431"], ["updated_at", "2023-03-31 15:55:23.818431"], ["quantity", 1]]
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFood Load (0.0ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCart Load (0.0ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mOrder Create (0.1ms)[0m  [1m[32mINSERT INTO "orders" ("food_id", "user_id", "price", "cart_id", "created_at", "updated_at", "quantity") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["food_id", 13], ["user_id", 4], ["price", 5], ["cart_id", 8], ["created_at", "2023-03-31 15:55:23.823815"], ["updated_at", "2023-03-31 15:55:23.823815"], ["quantity", 1]]
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFood Load (0.0ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCart Load (0.0ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mOrder Create (0.1ms)[0m  [1m[32mINSERT INTO "orders" ("food_id", "user_id", "price", "cart_id", "created_at", "updated_at", "quantity") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["food_id", 13], ["user_id", 4], ["price", 5], ["cart_id", 8], ["created_at", "2023-03-31 15:55:23.828912"], ["updated_at", "2023-03-31 15:55:23.828912"], ["quantity", 1]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFood Load (0.0ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCart Load (0.0ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mOrder Create (0.1ms)[0m  [1m[32mINSERT INTO "orders" ("food_id", "user_id", "price", "cart_id", "created_at", "updated_at", "quantity") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["food_id", 13], ["user_id", 4], ["price", 5], ["cart_id", 8], ["created_at", "2023-03-31 15:55:23.833984"], ["updated_at", "2023-03-31 15:55:23.833984"], ["quantity", 1]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "carts"[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "carts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "total_price" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "subtotals" integer, "user_id" integer)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "categories"[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "categories" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "foods"[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "foods" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "image" text, "price" integer, "star_rating" integer, "description" text, "in_stock" boolean, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "orders"[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "food_id" integer, "user_id" integer, "price" integer, "cart_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "quantity" integer)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" text, "email" text, "password_digest" varchar, "image_url" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20230330194304)[0m
+  [1m[35m (2.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20230328093551),
+(20230328093808),
+(20230328094125),
+(20230328094449),
+(20230328123734),
+(20230328125637),
+(20230328215137),
+(20230328215228),
+(20230328215251),
+(20230328215431),
+(20230330154200),
+(20230330154307),
+(20230330154353),
+(20230330161846),
+(20230330165043),
+(20230330165202),
+(20230330182444),
+(20230330184140),
+(20230330193554),
+(20230330193930);
+
+[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-03-31 15:55:32.311734"], ["updated_at", "2023-03-31 15:55:32.311734"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "7a96b670815537fbf44daa380004a990a4c7aa98"], ["created_at", "2023-03-31 15:55:32.318076"], ["updated_at", "2023-03-31 15:55:32.318076"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "carts"[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "carts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "total_price" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "subtotals" integer, "user_id" integer)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "categories"[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "categories" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "foods"[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "foods" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "image" text, "price" integer, "star_rating" integer, "description" text, "in_stock" boolean, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "orders"[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "food_id" integer, "user_id" integer, "price" integer, "cart_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "quantity" integer)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" text, "email" text, "password_digest" varchar, "image_url" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20230330194304)[0m
+  [1m[35m (2.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20230328093551),
+(20230328093808),
+(20230328094125),
+(20230328094449),
+(20230328123734),
+(20230328125637),
+(20230328215137),
+(20230328215228),
+(20230328215251),
+(20230328215431),
+(20230330154200),
+(20230330154307),
+(20230330154353),
+(20230330161846),
+(20230330165043),
+(20230330165202),
+(20230330182444),
+(20230330184140),
+(20230330193554),
+(20230330193930);
+
+[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-03-31 15:55:32.355474"], ["updated_at", "2023-03-31 15:55:32.355474"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2023-03-31 15:55:32.360099"], ["key", "environment"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "7a96b670815537fbf44daa380004a990a4c7aa98"], ["created_at", "2023-03-31 15:55:32.364703"], ["updated_at", "2023-03-31 15:55:32.364703"]]
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cakes"], ["created_at", "2023-03-31 15:55:32.381087"], ["updated_at", "2023-03-31 15:55:32.381087"]]
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.1ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Pastries"], ["created_at", "2023-03-31 15:55:32.389677"], ["updated_at", "2023-03-31 15:55:32.389677"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.1ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cookies"], ["created_at", "2023-03-31 15:55:32.393660"], ["updated_at", "2023-03-31 15:55:32.393660"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFood Create (0.1ms)[0m  [1m[32mINSERT INTO "foods" ("name", "image", "price", "star_rating", "description", "in_stock", "created_at", "updated_at", "category_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Red Velvet cake"], ["image", "https://images.unsplash.com/photo-1586788680434-30d324b2d46f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVkJTIwdmVsdmV0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"], ["price", 20], ["star_rating", 4], ["description", "Red velvet cake has endured as one of the most popular cakes in the United States.Cake's name is a descriptor of its soft, velvety texture."], ["in_stock", 1], ["created_at", "2023-03-31 15:55:32.410263"], ["updated_at", "2023-03-31 15:55:32.410263"], ["category_id", 1]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFood Create (0.1ms)[0m  [1m[32mINSERT INTO "foods" ("name", "image", "price", "star_rating", "description", "in_stock", "created_at", "updated_at", "category_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Black Forest cake"], ["image", "https://media.istockphoto.com/id/1327824483/photo/image-of-sliced-black-forest-gateau-with-piped-whipped-cream-rosettes-with-morello-cherries.jpg?b=1&s=170667a&w=0&k=20&c=PeLWsfUyUe3mliVIV1tPvbQpQmC0u_pge8kp5eFeWro="], ["price", 25], ["star_rating", 4], ["description", "Typically, Black Forest cake is made by soaking the chocolate sponge in sugar syrup flavored with cherry brandy and topped with whipped cream."], ["in_stock", 1], ["created_at", "2023-03-31 15:55:32.415542"], ["updated_at", "2023-03-31 15:55:32.415542"], ["category_id", 1]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFood Create (0.1ms)[0m  [1m[32mINSERT INTO "foods" ("name", "image", "price", "star_rating", "description", "in_stock", "created_at", "updated_at", "category_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cupcakes"], ["image", "https://media.istockphoto.com/id/1324582711/photo/chocolate-and-vanilla-mini-desserts-cream-cupcakes-panacotas.jpg?b=1&s=170667a&w=0&k=20&c=p3_ZRRf1yXrZoslETdu4itmTgCWsgVvhJBF8UUe25GU="], ["price", 5], ["star_rating", 3], ["description", "Cupcakes in general come in almost every flavor as traditional cakes, so you can customize your batch to your liking."], ["in_stock", 1], ["created_at", "2023-03-31 15:55:32.420207"], ["updated_at", "2023-03-31 15:55:32.420207"], ["category_id", 1]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mFood Create (0.1ms)[0m  [1m[32mINSERT INTO "foods" ("name", "image", "price", "star_rating", "description", "in_stock", "created_at", "updated_at", "category_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Apricot Danish"], ["image", "https://media.istockphoto.com/id/1399448503/photo/apricot-danish-pastries-on-a-white-napkin-the-cakes-are-served-in-a-tall-glass-vase-close-up.jpg?b=1&s=170667a&w=0&k=20&c=xRsdf3iC_4iOtg4Vf3XT33HSZjIc14hmnNx6XM43GFU="], ["price", 15], ["star_rating", 4], ["description", "Apricot Danishes are easy and delicious! Chopped fresh apricots on a bed of sweetened cream cheese wrapped in buttery, crispy puff pastry."], ["in_stock", 1], ["created_at", "2023-03-31 15:55:32.425051"], ["updated_at", "2023-03-31 15:55:32.425051"], ["category_id", 2]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mFood Create (0.2ms)[0m  [1m[32mINSERT INTO "foods" ("name", "image", "price", "star_rating", "description", "in_stock", "created_at", "updated_at", "category_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Chocolate tarts"], ["image", "https://media.istockphoto.com/id/480134303/photo/chocolate-tart.jpg?b=1&s=170667a&w=0&k=20&c=kT0ucWQBDGmxFMRvhMAQsv6l5jDUORazN8BQN3CUUGQ="], ["price", 15], ["star_rating", 4], ["description", "Get ready to swoon! These rich and indulgent chocolate tarts are filled with two types of chocolate."], ["in_stock", 1], ["created_at", "2023-03-31 15:55:32.430033"], ["updated_at", "2023-03-31 15:55:32.430033"], ["category_id", 2]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mFood Create (0.1ms)[0m  [1m[32mINSERT INTO "foods" ("name", "image", "price", "star_rating", "description", "in_stock", "created_at", "updated_at", "category_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Baklava"], ["image", "https://media.istockphoto.com/id/1367685040/photo/traditional-turkish-arabic-sweets-baklava-with-turkish-coffee.jpg?b=1&s=170667a&w=0&k=20&c=WDv2EjogNxFU3I3dt22BS9P3X2Q-rUBYZl4Sbxb_KCM="], ["price", 10], ["star_rating", 4], ["description", "Layer with nuts and drizzle with honey to make this wonderfully sticky Middle Eastern treat."], ["in_stock", 1], ["created_at", "2023-03-31 15:55:32.435847"], ["updated_at", "2023-03-31 15:55:32.435847"], ["category_id", 2]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mFood Create (0.1ms)[0m  [1m[32mINSERT INTO "foods" ("name", "image", "price", "star_rating", "description", "in_stock", "created_at", "updated_at", "category_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "White Chocolate Strawberry Cookies"], ["image", "https://images.unsplash.com/photo-1621236378699-8597faf6a176?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8V2hpdGUlMjBDaG9jb2xhdGUlMjBTdHJhd2JlcnJ5JTIwQ29va2llc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"], ["price", 5], ["star_rating", 4], ["description", "These cookies bring together two favorite ingredients: white chocolate and strawberry. They are perfectly sweet and chewy with fun bites of dried strawberry pieces and white chocolate chips."], ["in_stock", 1], ["created_at", "2023-03-31 15:55:32.440671"], ["updated_at", "2023-03-31 15:55:32.440671"], ["category_id", 3]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mFood Create (0.1ms)[0m  [1m[32mINSERT INTO "foods" ("name", "image", "price", "star_rating", "description", "in_stock", "created_at", "updated_at", "category_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Chocolate Chip Cookies"], ["image", "https://media.istockphoto.com/id/1367685040/photo/traditional-turkish-arabic-sweets-baklava-with-turkish-coffee.jpg?b=1&s=170667a&w=0&k=20&c=WDv2EjogNxFU3I3dt22BS9P3X2Q-rUBYZl4Sbxb_KCM="], ["price", 5], ["star_rating", 3], ["description", "You cannot go wrong with the classic chocolate chip cookie. This recipe includes melted butter, more brown sugar than white sugar, and an extra egg yolk for a chewy texture and big chocolate chunks for indulgent flavor."], ["in_stock", 1], ["created_at", "2023-03-31 15:55:32.445250"], ["updated_at", "2023-03-31 15:55:32.445250"], ["category_id", 3]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mFood Create (0.1ms)[0m  [1m[32mINSERT INTO "foods" ("name", "image", "price", "star_rating", "description", "in_stock", "created_at", "updated_at", "category_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Gingerbread Cookies"], ["image", "https://plus.unsplash.com/premium_photo-1669831178183-44b4829039d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z2luZ2VyYnJlYWQlMjBjb29raWVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"], ["price", 5], ["star_rating", 3], ["description", "They are the quintessential Christmas cookie, but gingerbread cookies are delicious anytime. With tasty warming spices, including ginger, cinnamon, ginger, and cloves, they are simply delicious and make your house smell amazing."], ["in_stock", 0], ["created_at", "2023-03-31 15:55:32.449964"], ["updated_at", "2023-03-31 15:55:32.449964"], ["category_id", 3]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "jeanelle"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "genia@reilly-mccullough.io"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "jeanelle"], ["email", "genia@reilly-mccullough.io"], ["password_digest", "[FILTERED]"], ["image_url", "https://loremflickr.com/300/300"], ["created_at", "2023-03-31 15:55:32.759108"], ["updated_at", "2023-03-31 15:55:32.759108"]]
+  [1m[36mTRANSACTION (10.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "greg_heaney"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "jerald@jakubowski.io"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "margherita.erdman"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "raleigh.jenkins@cummings.io"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCart Create (0.1ms)[0m  [1m[32mINSERT INTO "carts" ("total_price", "created_at", "updated_at", "subtotals", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["total_price", 0], ["created_at", "2023-03-31 15:55:33.176262"], ["updated_at", "2023-03-31 15:55:33.176262"], ["subtotals", 0], ["user_id", 1]]
+  [1m[36mTRANSACTION (14.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCart Create (0.1ms)[0m  [1m[32mINSERT INTO "carts" ("total_price", "created_at", "updated_at", "subtotals", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["total_price", 0], ["created_at", "2023-03-31 15:55:33.193286"], ["updated_at", "2023-03-31 15:55:33.193286"], ["subtotals", 0], ["user_id", 1]]
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCart Create (0.1ms)[0m  [1m[32mINSERT INTO "carts" ("total_price", "created_at", "updated_at", "subtotals", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["total_price", 0], ["created_at", "2023-03-31 15:55:33.197922"], ["updated_at", "2023-03-31 15:55:33.197922"], ["subtotals", 0], ["user_id", 1]]
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCart Load (0.1ms)[0m  [1m[34mSELECT "carts".* FROM "carts"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCart Load (0.1ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mOrder Create (0.2ms)[0m  [1m[32mINSERT INTO "orders" ("food_id", "user_id", "price", "cart_id", "created_at", "updated_at", "quantity") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["food_id", 5], ["user_id", 1], ["price", 15], ["cart_id", 3], ["created_at", "2023-03-31 15:55:33.213695"], ["updated_at", "2023-03-31 15:55:33.213695"], ["quantity", 1]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFood Load (0.0ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCart Load (0.0ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mOrder Create (0.1ms)[0m  [1m[32mINSERT INTO "orders" ("food_id", "user_id", "price", "cart_id", "created_at", "updated_at", "quantity") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["food_id", 5], ["user_id", 1], ["price", 15], ["cart_id", 3], ["created_at", "2023-03-31 15:55:33.220028"], ["updated_at", "2023-03-31 15:55:33.220028"], ["quantity", 1]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFood Load (0.0ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCart Load (0.0ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mOrder Create (0.1ms)[0m  [1m[32mINSERT INTO "orders" ("food_id", "user_id", "price", "cart_id", "created_at", "updated_at", "quantity") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["food_id", 5], ["user_id", 1], ["price", 15], ["cart_id", 3], ["created_at", "2023-03-31 15:55:33.225294"], ["updated_at", "2023-03-31 15:55:33.225294"], ["quantity", 1]]
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFood Load (0.0ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCart Load (0.0ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mOrder Create (0.1ms)[0m  [1m[32mINSERT INTO "orders" ("food_id", "user_id", "price", "cart_id", "created_at", "updated_at", "quantity") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["food_id", 5], ["user_id", 1], ["price", 15], ["cart_id", 3], ["created_at", "2023-03-31 15:55:33.231047"], ["updated_at", "2023-03-31 15:55:33.231047"], ["quantity", 1]]
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFood Load (0.0ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCart Load (0.0ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mOrder Create (0.1ms)[0m  [1m[32mINSERT INTO "orders" ("food_id", "user_id", "price", "cart_id", "created_at", "updated_at", "quantity") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["food_id", 5], ["user_id", 1], ["price", 15], ["cart_id", 3], ["created_at", "2023-03-31 15:55:33.236634"], ["updated_at", "2023-03-31 15:55:33.236634"], ["quantity", 1]]
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/foods" for 127.0.0.1 at 2023-03-31 18:55:42 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FoodsController#index as HTML
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/controllers/foods_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.97ms)
+Completed 200 OK in 25ms (Views: 15.0ms | ActiveRecord: 0.6ms | Allocations: 48532)
+
+
+Started GET "/foods/1" for 127.0.0.1 at 2023-03-31 18:57:30 +0300
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/foods_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/foods_controller.rb:11:in `show'
+[active_model_serializers] Rendered FoodSerializer with ActiveModelSerializers::Adapter::Attributes (8.35ms)
+Completed 200 OK in 15ms (Views: 8.4ms | ActiveRecord: 0.5ms | Allocations: 9528)
+
+
+Started GET "/foods/1" for 127.0.0.1 at 2023-03-31 18:58:10 +0300
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/foods_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/foods_controller.rb:11:in `show'
+[active_model_serializers] Rendered FoodSerializer with ActiveModelSerializers::Adapter::Attributes (5.79ms)
+Completed 200 OK in 14ms (Views: 6.4ms | ActiveRecord: 1.1ms | Allocations: 12615)
+
+
+Started GET "/foods/1" for 127.0.0.1 at 2023-03-31 18:58:11 +0300
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/foods_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/foods_controller.rb:11:in `show'
+[active_model_serializers] Rendered FoodSerializer with ActiveModelSerializers::Adapter::Attributes (3.85ms)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.3ms | Allocations: 1710)
+
+
+Started GET "/foods" for 127.0.0.1 at 2023-03-31 18:58:45 +0300
+  
+SyntaxError (/home/user/Development/code/phase-4/Ruby-Project/food-cart-api/app/controllers/foods_controller.rb:11: syntax error, unexpected ',', expecting literal content or terminator or tSTRING_DBEG or tSTRING_DVAR
+... render json: food, include: :, status: :ok
+...                              ^
+):
+  
+app/controllers/foods_controller.rb:11: syntax error, unexpected ',', expecting literal content or terminator or tSTRING_DBEG or tSTRING_DVAR
+app/controllers/foods_controller.rb:11: syntax error, unexpected ',', expecting literal content or terminator or tSTRING_DBEG or tSTRING_DVAR
+Started GET "/foods" for 127.0.0.1 at 2023-03-31 18:58:55 +0300
+Processing by FoodsController#index as HTML
+  [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/controllers/foods_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.92ms)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.8ms | Allocations: 9706)
+
+
+Started GET "/foods/1" for 127.0.0.1 at 2023-03-31 18:59:11 +0300
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFood Load (0.2ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/foods_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/foods_controller.rb:11:in `show'
+[active_model_serializers] Rendered FoodSerializer with ActiveModelSerializers::Adapter::Attributes (6.52ms)
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.6ms | Allocations: 5334)
+
+
+Started GET "/foods/1" for 127.0.0.1 at 2023-03-31 18:59:25 +0300
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/foods_controller.rb:10:in `show'
+[active_model_serializers] Rendered FoodSerializer with ActiveModelSerializers::Adapter::Attributes (0.2ms)
+Completed 200 OK in 9ms (Views: 1.1ms | ActiveRecord: 0.6ms | Allocations: 8208)
+
+
+Started GET "/foods/111" for 127.0.0.1 at 2023-03-31 19:00:18 +0300
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"111"}
+  [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 111], ["LIMIT", 1]]
+  ↳ app/controllers/foods_controller.rb:10:in `show'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 526)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Food with 'id'=111):
+  
+app/controllers/foods_controller.rb:10:in `show'
+Started GET "/foods/111" for 127.0.0.1 at 2023-03-31 19:02:35 +0300
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"111"}
+  [1m[36mFood Load (0.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT ?[0m  [["id", 111], ["LIMIT", 1]]
+  ↳ app/controllers/foods_controller.rb:11:in `show'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 404 Not Found in 6ms (Views: 1.0ms | ActiveRecord: 0.6ms | Allocations: 5909)
+
+
+Started GET "/carts" for 127.0.0.1 at 2023-03-31 19:03:05 +0300
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 5ms (Views: 0.4ms | ActiveRecord: 0.5ms | Allocations: 3154)
+
+
+Started GET "/carts" for 127.0.0.1 at 2023-03-31 19:03:05 +0300
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 791)
+
+
+Started GET "/carts/1" for 127.0.0.1 at 2023-03-31 19:03:17 +0300
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.04ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 791)
+
+
+Started GET "/carts/1" for 127.0.0.1 at 2023-03-31 19:03:17 +0300
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 791)
+
+
+Started GET "/users" for 127.0.0.1 at 2023-03-31 19:03:30 +0300
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.18ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.4ms | Allocations: 16023)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2023-03-31 19:04:44 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 797)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2023-03-31 19:04:45 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.04ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 791)
+
+
+Started GET "/users/111" for 127.0.0.1 at 2023-03-31 19:04:51 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"111"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 791)
+
+
+Started GET "/orders" for 127.0.0.1 at 2023-03-31 19:07:01 +0300
+Processing by OrdersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 865)
+
+
+Started GET "/orders" for 127.0.0.1 at 2023-03-31 19:07:01 +0300
+Processing by OrdersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 791)
+
+
