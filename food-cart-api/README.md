@@ -1,4 +1,4 @@
-# FOOd CART API
+# FOOD CART API
 For this project, you must:
 
 Create a Rails API backend.
