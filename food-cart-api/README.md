@@ -103,7 +103,7 @@ Return JSON data in the format below:
 ```
 
 GET /foods/:id
-If the `Hero` exists, return JSON data in the format below:
+If the `Food` exists, return JSON data in the format below:
 
 ```
 [
