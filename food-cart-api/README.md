@@ -167,7 +167,7 @@ properties in the body of the request:
 
 If the `Order` is created successfully, send back a response with the data with status 201
 
-If the `HeroPower` is **not** created successfully, return the following
+If the `Order` is **not** created successfully, return the following
 JSON data, along with the appropriate HTTP status code:
 
 ```
