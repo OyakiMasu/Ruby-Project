@@ -77,7 +77,7 @@ specified along with the appropriate HTTP verb.
 
 GET /foods
 Return JSON data in the format below:
-
+```
 [  
 {
 "id": 1,
@@ -100,12 +100,12 @@ Return JSON data in the format below:
 "category_id": 1
 }
 ]
-
+```
 
 GET /foods/:id
 If the `Hero` exists, return JSON data in the format below:
 
-
+```
 [
     {
 "id": 1,
@@ -117,8 +117,8 @@ If the `Hero` exists, return JSON data in the format below:
 "star_rating": 4,
 "category_id": 1
 }
-
 ]
+```
 
 If the `Food` does not exist, return the following JSON data, along with
 the appropriate HTTP status code:
@@ -128,7 +128,7 @@ the appropriate HTTP status code:
  GET /users
 Return JSON data in the format below:
 
-
+```
 [
 {
 "id": 1,
@@ -136,7 +136,7 @@ Return JSON data in the format below:
 "email": "genia@reilly-mccullough.io"
 }
 ]
-
+```
 
  GET /users/:id
 If the `User` exists, return JSON data in the format below:
