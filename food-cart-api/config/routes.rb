@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :carts, only:[:index, :show]
 
   # Orders
-  resources :orders, only:[:index,:show,:create,:update,:destroy]
+  resources :orders, only:[:index,:show,:create,:update]
 
   # Foods
   resources :foods, only:[:index, :show]
@@ -24,5 +24,9 @@ Rails.application.routes.draw do
   post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"
   
+  # add to cart
+  post '/carts/:cart_id/orders', to:'orders#create', as:'cart_orders'
 
+  # delete from cart
+  delete '/carts/:cart_id/orders/:id', to: 'orders#destroy', as:'cart_order'
 end

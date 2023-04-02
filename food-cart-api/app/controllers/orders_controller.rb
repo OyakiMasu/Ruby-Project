@@ -1,5 +1,5 @@
 class OrdersController < ApplicationController
-    before_action :authorize, only: [:index, :show, :create, :update, :destroy]
+    before_action :authorize, only: [:show]
     # rescue 
 rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
 rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity
@@ -14,9 +14,15 @@ rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity
     end
 #    POST /orders => add to cart
 def create
-    order = Order.create!(order_params)
-    render json: order, status: :created
+    # Find the Cart record to add the item to
+    cart = Cart.find(params[:cart_id])
+        # Find the Food record that was selected
+    food = Food.find(params[:food_id])
+        # Create a new Order record that belongs to both the Cart and Food
+    order = Order.create!(cart: cart, food: food, quantity: params[:quantity], price: food.price, user_id: params[:user_id])
+    render json: order, status: :created 
 end
+    
 # UPDATE - PATCH /orders/{id}
 def update
     order = Order.find(params[:id])
@@ -25,6 +31,7 @@ def update
 end
 # DESTROY - DELETE /orders/{id}
 def destroy
+    cart = Cart.find(params[:cart_id])
     order = Order.find(params[:id])
     order.destroy
     head :no_content

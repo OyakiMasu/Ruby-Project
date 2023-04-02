@@ -1,5 +1,5 @@
 class CartsController < ApplicationController
-    before_action :authorize, only: [:index, :show]
+    # before_action :authorize, only: [:show]
     # rescue
 rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
     def index
@@ -9,10 +9,9 @@ rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
     # SHOW /carts/{id} => include orders as children
     def show
         cart = find_cart
-        render json: cart, include: :orders, status: :ok
+        render json: cart, include: :foods, status: :ok
     end
-
-
+    
     private
     # strong params
     def find_cart
