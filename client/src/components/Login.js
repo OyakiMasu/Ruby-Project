@@ -153,6 +153,7 @@ function Login() {
           {message && <Message isError={message.startsWith("Invalid")}>{message}</Message>}
           <LinkWrapper>
           Don't have an account? <CustomLink to="/signup">Register</CustomLink>
+          Forgot Password? <CustomLink to="/resetpassword">Reset</CustomLink>
           </LinkWrapper>
           </Container>
           );

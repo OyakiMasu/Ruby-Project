@@ -8,6 +8,7 @@ import Navbar from './components/Navbar';
 import Search from './components/Search';
 import Cart from './components/Cart';
 import Billing from './components/Billing';
+import ResetPassword from './components/ResetPassword';
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
         <Route path="/billing" element={<Billing/>}/>
         <Route path="/navbar" element={<Navbar/>}/>
         <Route path="/search" element={<Search/>}/>
+        <Route path="/resetpassword" element={<ResetPassword/>}/>
       </Routes>
       </BrowserRouter>
     </div>
