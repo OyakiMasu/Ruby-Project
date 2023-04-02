@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :categories, only: [:index, :show]
+  resources :carts, only:[:index, :show, :create]
+
   # Carts
   resources :carts, only:[:index, :show]
 
@@ -13,6 +16,8 @@ Rails.application.routes.draw do
 
   # Sign-up
   post "/signup", to: "users#create"
+  get '/signup', to: 'signup#index'
+
 
   # Remain Logged in
   get "/me", to: "users#show"
@@ -24,5 +29,6 @@ Rails.application.routes.draw do
   post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"
   
+  get '/favicon.ico', to: 'application#favicon'
 
 end

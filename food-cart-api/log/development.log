@@ -11082,3 +11082,392 @@ Filter chain halted as :authorize rendered or redirected
 Completed 401 Unauthorized in 42ms (Views: 1.0ms | ActiveRecord: 0.2ms | Allocations: 810)
 
 
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 10:43:40 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 10:45:24 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 10:52:28 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 10:53:38 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 10:53:39 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 10:53:40 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 10:53:40 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 10:53:41 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 10:53:41 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 10:53:42 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 10:53:42 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 10:53:42 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 10:53:43 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 10:53:44 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 10:53:44 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 10:53:45 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 10:54:06 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 10:54:07 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 10:54:14 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 10:54:15 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 10:54:26 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 10:55:04 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 10:55:05 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 10:55:05 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 10:55:05 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 10:55:06 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 10:55:12 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 12:14:04 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 22:41:55 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 22:44:47 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 22:46:11 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 22:59:01 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 23:00:56 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 23:00:58 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 23:08:29 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 23:08:30 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for ::1 at 2023-04-02 23:27:20 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for ::1 at 2023-04-02 23:28:26 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 23:32:58 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started GET "/signup" for 127.0.0.1 at 2023-04-02 23:33:13 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/signup"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2023-04-02 23:33:13 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 23:37:29 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 23:37:30 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 23:37:31 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 23:37:32 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started OPTIONS "/signup" for 127.0.0.1 at 2023-04-02 23:37:57 +0300
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/signup"):
+  
+Started GET "/signup" for 127.0.0.1 at 2023-04-02 23:40:06 +0300
+  
+ActionController::RoutingError (uninitialized constant SignupController
+Did you mean?  SignalException):
+  
+Started POST "/signup" for 127.0.0.1 at 2023-04-02 23:40:13 +0300
+Processing by UsersController#create as */*
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 422 Unprocessable Entity in 1594ms (Views: 1.8ms | ActiveRecord: 2.6ms | Allocations: 1050936)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-04-02 23:45:53 +0300
+Processing by UsersController#create as */*
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 422 Unprocessable Entity in 12ms (Views: 0.7ms | ActiveRecord: 0.5ms | Allocations: 8047)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-04-02 23:50:13 +0300
+Processing by UsersController#create as */*
+Completed 500 Internal Server Error in 3ms (Allocations: 198)
+
+
+  
+SyntaxError (/home/joy/Development/phase 4/Ruby-Project/food-cart-api/app/models/user.rb:9: syntax error, unexpected ':', expecting `end'
+...  validates :password, length : {minimum: 6}, if: -> { new_r...
+...                              ^
+/home/joy/Development/phase 4/Ruby-Project/food-cart-api/app/models/user.rb:9: syntax error, unexpected ',', expecting `end'
+...assword, length : {minimum: 6}, if: -> { new_record? || !pas...
+...                              ^
+):
+  
+app/models/user.rb:9: syntax error, unexpected ':', expecting `end'
+app/models/user.rb:9: syntax error, unexpected ',', expecting `end'
+app/models/user.rb:9: syntax error, unexpected ':', expecting `end'
+app/models/user.rb:9: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:21:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-02 23:50:56 +0300
+Processing by UsersController#create as */*
+Completed 500 Internal Server Error in 11ms (Allocations: 5182)
+
+
+  
+NameError (uninitialized constant URI::MailTo::EMAIL_REGEX
+Did you mean?  URI::MailTo::EMAIL_REGEXP):
+  
+app/models/user.rb:8:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/users_controller.rb:21:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-02 23:51:26 +0300
+Processing by UsersController#create as */*
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 422 Unprocessable Entity in 19ms (Views: 1.1ms | ActiveRecord: 1.4ms | Allocations: 8482)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-04-02 23:53:07 +0300
+Processing by UsersController#create as */*
+  Parameters: {"password"=>"[FILTERED]", "username"=>"letimjoy", "email"=>"letimjoy7@gmail.com", "user"=>{"username"=>"letimjoy", "email"=>"letimjoy7@gmail.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x00007f13cc4d1458>, params: {"password"=>"[FILTERED]", "username"=>"letimjoy", "email"=>"letimjoy7@gmail.com", "controller"=>"users", "action"=>"create", "user"=>{"username"=>"letimjoy", "email"=>"letimjoy7@gmail.com"}} }[0m
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1244)
+
+
+  
+NoMethodError (undefined method `empty?' for 1234534:Integer):
+  
+app/controllers/users_controller.rb:21:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-02 23:54:10 +0300
+Processing by UsersController#create as */*
+  Parameters: {"password"=>"[FILTERED]", "username"=>"letimjoy", "email"=>"letimjoy7@gmail.com", "user"=>{"username"=>"letimjoy", "email"=>"letimjoy7@gmail.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x00007f13c80b9248>, params: {"password"=>"[FILTERED]", "username"=>"letimjoy", "email"=>"letimjoy7@gmail.com", "controller"=>"users", "action"=>"create", "user"=>{"username"=>"letimjoy", "email"=>"letimjoy7@gmail.com"}} }[0m
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.9ms | Allocations: 2724)
+
+
+  
+NoMethodError (undefined method `empty?' for 1234534:Integer):
+  
+app/controllers/users_controller.rb:21:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-02 23:58:00 +0300
+Processing by UsersController#create as */*
+  Parameters: {"password"=>"[FILTERED]", "username"=>"letimjoy", "email"=>"letimjoy7@gmail.com", "user"=>{"username"=>"letimjoy", "email"=>"letimjoy7@gmail.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x00007f13e047db00>, params: {"password"=>"[FILTERED]", "username"=>"letimjoy", "email"=>"letimjoy7@gmail.com", "controller"=>"users", "action"=>"create", "user"=>{"username"=>"letimjoy", "email"=>"letimjoy7@gmail.com"}} }[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.3ms | Allocations: 2765)
+
+
+  
+NoMethodError (undefined method `empty?' for 1234534:Integer):
+  
+app/controllers/users_controller.rb:17:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-02 23:58:17 +0300
+Error occurred while parsing request parameters.
+Contents:
+
+{
+    "password": 
+    "username": "letimjoy",
+    "email": "letimjoy7@gmail.com"
+
+}
+Processing by UsersController#create as */*
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 118)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (Error occurred while parsing request parameters):
+  
+app/controllers/users_controller.rb:63:in `user_params'
+app/controllers/users_controller.rb:17:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-02 23:59:29 +0300
+Processing by UsersController#create as */*
+  Parameters: {"password_digest"=>"[FILTERED]", "username"=>"letimjoy", "email"=>"letimjoy7@gmail.com", "user"=>{"username"=>"letimjoy", "email"=>"letimjoy7@gmail.com", "password_digest"=>"[FILTERED]"}}
+[31mUnpermitted parameters: :password_digest, :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x00007f13cfa37390>, params: {"password_digest"=>"[FILTERED]", "username"=>"letimjoy", "email"=>"letimjoy7@gmail.com", "controller"=>"users", "action"=>"create", "user"=>{"username"=>"letimjoy", "email"=>"letimjoy7@gmail.com", "password_digest"=>"[FILTERED]"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[36mUser Exists? (1.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "letimjoy"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "letimjoy7@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."password" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:18:in `create'
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 2.6ms | Allocations: 3705)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: users.password):
+  
+app/controllers/users_controller.rb:18:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 00:00:54 +0300
+Processing by UsersController#create as */*
+  Parameters: {"password_digest"=>"[FILTERED]", "username"=>"letimjoy", "email"=>"letimjoy7@gmail.com", "user"=>{"username"=>"letimjoy", "email"=>"letimjoy7@gmail.com", "password_digest"=>"[FILTERED]"}}
+[31mUnpermitted parameters: :password_digest, :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x00007f13cec5de90>, params: {"password_digest"=>"[FILTERED]", "username"=>"letimjoy", "email"=>"letimjoy7@gmail.com", "controller"=>"users", "action"=>"create", "user"=>{"username"=>"letimjoy", "email"=>"letimjoy7@gmail.com", "password_digest"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "letimjoy"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "letimjoy7@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."password" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `create'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 2.0ms | Allocations: 3968)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: users.password):
+  
+app/controllers/users_controller.rb:18:in `create'
+Started GET "/signup" for 127.0.0.1 at 2023-04-03 00:01:09 +0300
+  
+ActionController::RoutingError (uninitialized constant SignupController
+Did you mean?  SignalException):
+  
+Started POST "/signup" for 127.0.0.1 at 2023-04-03 00:01:24 +0300
+Processing by UsersController#create as */*
+  Parameters: {"password_digest"=>"[FILTERED]", "username"=>"letimjoy", "email"=>"letimjoy7@gmail.com", "user"=>{"username"=>"letimjoy", "email"=>"letimjoy7@gmail.com", "password_digest"=>"[FILTERED]"}}
+[31mUnpermitted parameters: :password_digest, :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x00007f13ce4714e8>, params: {"password_digest"=>"[FILTERED]", "username"=>"letimjoy", "email"=>"letimjoy7@gmail.com", "controller"=>"users", "action"=>"create", "user"=>{"username"=>"letimjoy", "email"=>"letimjoy7@gmail.com", "password_digest"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "letimjoy"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "letimjoy7@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."password" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `create'
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.3ms | Allocations: 2109)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: users.password):
+  
+app/controllers/users_controller.rb:18:in `create'
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "shelia"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "edward.botsford@ritchie-howe.biz"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."password" = ? LIMIT ?[0m  [["password", "[FILTERED]"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
