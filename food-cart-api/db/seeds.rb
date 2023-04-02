@@ -110,7 +110,9 @@ user = users.uniq.sample
  Cart.create(
     total_price: 0,
     subtotals: 0,
-    user_id: user.id
+    user_id: user.id,
+    quantity: 1,
+    food_id: food.id
  )
 end
 
