@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Cart.css';
@@ -42,8 +41,8 @@ const Cart = () => {
   const totalPrice = cartItems.reduce((acc, item) => acc + (item.price * item.quantity), 0);
 
   const handleCheckout = () => {
-    // Navigate to the checkout page
-    window.location.href = 'https://checkoutpage.co/c/food-inc/food';
+    // Navigate to the billing page with the price as a query parameter
+    window.location.href = `/billing?price=${totalPrice}`;
   };
 
   return (

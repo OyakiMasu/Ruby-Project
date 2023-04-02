@@ -1,19 +1,35 @@
 class CartsController < ApplicationController
-    before_action :authorize, only: [:index, :show]
+    # before_action :authorize, only: [:index, :show]
     # rescue
 rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
     def index
         carts = Cart.all
-        render json: carts
+        render json: carts, include: :carts, status: :ok
     end
     # SHOW /carts/{id} => include orders as children
     def show
         cart = find_cart
-        render json: cart, status: :ok
+        render json: cart, include: :orders, status: :ok
     end
+    
+    #  POST carts
 
+    def create
+        cart = Cart.create(cart_params)
+        
+        if cart.save
+          render json: cart, status: :created
+        else
+          render json: { errors: cart.errors.full_messages }, status: :unprocessable_entity
+        end
+      end
+      
+         
 
     private
+    def cart_params
+        params.require(:cart).permit(:quantity, :price)
+      end
     # strong params
     def find_cart
         Cart.find(params[:id])

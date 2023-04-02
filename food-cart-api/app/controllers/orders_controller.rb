@@ -1,5 +1,5 @@
 class OrdersController < ApplicationController
-    before_action :authorize, only: [:index, :show, :create, :update, :destroy]
+    # before_action :authorize, only: [:index, :show, :create, :update, :destroy]
     # rescue 
 rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
 rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity

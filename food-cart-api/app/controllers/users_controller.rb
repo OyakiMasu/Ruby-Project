@@ -1,8 +1,16 @@
 class UsersController < ApplicationController
     before_action :authorize, only: [:show, :update, :destroy]
+<<<<<<< HEAD
   
     rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
   
+=======
+
+# Handle ActiveRecord Not Found exception
+rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
+
+    # get all users /users
+>>>>>>> 533a3fdd5a68b483fd4dd8fd2b9d0904eb2bf8ec
     def index
       users = User.all
       render json: users, include: :posts

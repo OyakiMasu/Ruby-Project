@@ -1,7 +1,6 @@
 class User < ApplicationRecord
     has_secure_password
-    has_many :orders
-    has_many :foods, through: :orders
+    has_many :carts
 
     validates :username, presence: true, uniqueness: true
     validates :email, presence: true, uniqueness: true

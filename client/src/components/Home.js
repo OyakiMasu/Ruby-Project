@@ -7,24 +7,21 @@ import Rating from 'react-rating';
 import Footer from './Footer';
 import { Carousel } from 'react-bootstrap';
 
-
 const Home = () => {
   const [products, setProducts] = useState([]);
-
+  
   useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const res = await axios.get('https://vickyprinz.github.io/db.json');
-        const productsWithRating = res.data.cakes.map((product) => ({ ...product, rating: 0 }));
-        setProducts(productsWithRating);
-        console.log(productsWithRating); // to check if the data is received properly
-      } catch (error) {
-        console.error(error);
-      }
-    };
-    
-
-    fetchProducts();
+  const fetchProducts = async () => {
+  try {
+  const res = await axios.get('http://127.0.0.1:3000/foods');
+  setProducts(res.data);
+  console.log(res.data); // to check if the data is received properly
+  } catch (error) {
+  console.error(error);
+  }
+  };
+  
+  fetchProducts();
   }, []);
 
   const handleAddToCart = (product) => {
@@ -71,9 +68,6 @@ const Home = () => {
     </Carousel.Item>
   </Carousel>
 </div>
-
-
-
 
       <h1>Best Seller</h1>
       <div className="row">
