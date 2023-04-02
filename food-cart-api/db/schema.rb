@@ -40,10 +40,10 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_28_215431) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.text "username"
-    t.text "email"
-    t.string "password_digest"
-    t.text "image_url"
+    t.text "username", null: false
+    t.text "email", null: false
+    t.string "password_digest", null: false
+    t.text "image_url", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
