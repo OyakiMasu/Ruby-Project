@@ -40,10 +40,11 @@ const Cart = () => {
 
   const totalPrice = cartItems.reduce((acc, item) => acc + (item.price * item.quantity), 0);
 
-  const handleCheckout = () => {
-    // Navigate to the billing page with the price as a query parameter
-    window.location.href = `/billing?price=${totalPrice}`;
-  };
+ const handleCheckout = () => {
+  // Navigate to the billing page with the price as a query parameter
+  <Link to="/billing" className="back-button">CHECK out</Link>
+};
+
 
   return (
     <div className="cart-container">
