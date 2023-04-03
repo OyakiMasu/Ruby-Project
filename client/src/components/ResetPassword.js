@@ -12,7 +12,7 @@ const ResetPassword = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("/api/reset-password", {
+      const response = await fetch("http://localhost:3000/reset_passwords", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

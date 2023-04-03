@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './index'
+import './index.css'
 import Home from './components/Home';
 import Login from './components/Login';
 import Signup from './components/Signup';
@@ -9,6 +10,7 @@ import Search from './components/Search';
 import Cart from './components/Cart';
 import Billing from './components/Billing';
 import ResetPassword from './components/ResetPassword';
+import CategoryList from './components/CategoryList';
 
 export default function App() {
   return (
@@ -25,6 +27,7 @@ export default function App() {
         <Route path="/navbar" element={<Navbar/>}/>
         <Route path="/search" element={<Search/>}/>
         <Route path="/resetpassword" element={<ResetPassword/>}/>
+        <Route path="/categorylist" element={<CategoryList/>}/>
       </Routes>
       </BrowserRouter>
     </div>

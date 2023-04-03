@@ -1,5 +1,5 @@
 class FoodSerializer < ActiveModel::Serializer
-  attributes :id, :name, :price, :image, :in_stock, :description, :star_rating, :category_id
+  attributes :id, :name, :price, :image, :in_stock, :description, :star_rating, :category_id, :food_id, :user_id
 
   # has_many :orders
   # has_many :carts, through: :orders

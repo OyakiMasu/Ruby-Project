@@ -94,7 +94,7 @@ Food.create([
 )
 
 #users
-3.times do
+5.times do
     User.create(
         username: Faker::Internet.username,
         email: Faker::Internet.email,
@@ -106,12 +106,12 @@ end
 users = User.all
 # carts
 user = users.uniq.sample
-3.times do
+6.times do
  Cart.create(
     total_price: 0,
     subtotals: 0,
     user_id: user.id,
-    quantity: 1,
+    quantity: 7,
     food_id: food.id
  )
 end

@@ -1,12 +1,10 @@
 Rails.application.routes.draw do
   resources :categories, only: [:index, :show]
   resources :carts, only:[:index, :show, :create]
-<<<<<<< HEAD
+
 
   # Carts
   resources :carts, only:[:index, :show]
-=======
->>>>>>> 533a3fdd5a68b483fd4dd8fd2b9d0904eb2bf8ec
 
   # Orders
   resources :orders, only:[:index,:show,:create,:update,:destroy]
@@ -33,5 +31,9 @@ Rails.application.routes.draw do
   delete "/logout", to: "sessions#destroy"
   
   get '/favicon.ico', to: 'application#favicon'
+
+  # reset_password
+  post '/reset_password', to: 'reset_password#create'
+  put '/reset_password', to: 'reset_password#update'
 
 end
