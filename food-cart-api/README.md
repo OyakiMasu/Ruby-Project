@@ -48,7 +48,7 @@ rails s
 http://localhost:3000
 
 ```
-### Deployment link
+### Deployment link : https://food-carty-api.onrender.com/
 
 
 ### Validations
