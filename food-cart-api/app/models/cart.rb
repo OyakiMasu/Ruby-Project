@@ -1,7 +1,10 @@
 class Cart < ApplicationRecord
-    belongs_to :order
+    has_many :orders
+    has_many :foods, through: :orders
 
-    
-    validates :total_price, presence: true, numericality: { greater_than_or_equal_to: 0 }
-    validates :quantity, presence: true, numericality: { greater_than_or_equal_to: 0 }
+    belongs_to :user
+    belongs_to :foods
+
+    validates :quantity, presence: true, numericality: {greater_than: 0}
+
 end

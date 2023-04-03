@@ -1,10 +1,12 @@
 class Food < ApplicationRecord
-    belongs_to :order
+    has_many :orders
+    has_many :carts, through: :orders
 
-    validates :name, presence: true
-    validates :price, presence: true, numericality: { greater_than: 0}
-    validates :image, presence: true
-    validates :in_stock, inclusion: {in: [true, false]}
-    validates :description, presence: true, length: { minimum: 10, maximum: 500}
-    validates :validate_total_price
+    belongs_to :category
+    has_many :users, through: :orders
+
+    # validates :star_rating, { 
+    #     numericality: { greater_than_or_equal_to: 1, less_than_or_equal_to: 5 },
+    #     presence: true
+    # }
 end

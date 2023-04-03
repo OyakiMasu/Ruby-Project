@@ -23,6 +23,24 @@ module FoodCartApi
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
+    # This is set in apps generated with the --api flag, and removes session/cookie middleware
+    config.api_only = true
+
+    # Must add these lines!
+    # Adding back cookies and session middleware
+    config.middleware.use ActionDispatch::Cookies 
+    config.middleware.use ActionDispatch::Session::CookieStore 
+
+    # Use SameSite=Strict for all cookies to help protect against CSRF
+    config.action_dispatch.cookies_same_site_protection = :strict
+
+
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins 'http://localhost:3001'
+        resource '*', headers: :any, methods: [:get, :post, :put, :patch, :delete, :options, :head]
+      end
+    end
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
