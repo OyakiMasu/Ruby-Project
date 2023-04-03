@@ -59,9 +59,25 @@ rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
             render json: { error: 'Invalid current password' }, status: :unprocessable_entity
         end
     end
-
+    # def change_password
+    #     user = current_user
+    #     if user && user.authenticate(params[:current_password])
+    #       user.update(password: params[:new_password])
+    #       render json: { message: 'Password updated successfully' }, status: :ok
+    #     else
+    #       render json: { error: 'Invalid current password' }, status: :unprocessable_entity
+    #     end
+    #   end
+      
+     
+      
+    
+      
     private
 
+    def current_user
+        User.find(session[:user_id]) if session[:user_id]
+      end
     # errors
     def render_not_found_response
         render json: {errors: "User not found"}, status: :not_found
