@@ -110,7 +110,7 @@ function Signup() {
       return;
     }
   
-    fetch("http://127.0.0.1:3000/signup", {
+    fetch("https://food-carty-api.onrender.com/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

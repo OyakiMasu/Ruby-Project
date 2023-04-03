@@ -13,7 +13,7 @@ const Home = () => {
   useEffect(() => {
   const fetchProducts = async () => {
   try {
-  const res = await axios.get('http://127.0.0.1:3000/foods');
+  const res = await axios.get('https://food-carty-api.onrender.com');
   setProducts(res.data);
   console.log(res.data); // to check if the data is received properly
   } catch (error) {
@@ -75,7 +75,7 @@ const Home = () => {
           products.map((product) => (
             <div className="col-lg-4 col-md-6 mb-4" key={product.id}>
               <div className="card">
-                <img className="card-img-top" src={product.image} alt="product img" />
+                <img className="card-img-top" src={product.image_url} alt="product img" />
                 <div className="card-body">
                   <h5 className="card-title">{product.name}</h5>
                   <p className="card-text">{product.description}</p>
@@ -106,7 +106,7 @@ const Home = () => {
       products.map((product) => (
         <div className="col-lg-4 col-md-6 mb-4" key={product.id}>
           <div className="card">
-            <img className="card-img-top" src={product.image} alt="product img" />
+            <img className="card-img-top" src={product.image_url} alt="product img" />
             <div className="card-body">
               <h5 className="card-title">{product.name}</h5>
               <p className="card-text">{product.description}</p>

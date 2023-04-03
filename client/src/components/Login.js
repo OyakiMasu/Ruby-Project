@@ -111,7 +111,7 @@ function Login() {
 
     try {
       // send login request to backend
-      const response = await axios.post("http://127.0.0.1:3000/login", {
+      const response = await axios.post("https://food-carty-api.onrender.com/login", {
         email: formData.email,
         password: formData.password,
       });
