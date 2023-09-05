@@ -1,0 +1,41 @@
+.card {
+    width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: italic;
+  }
+  
+  .input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #0069d9;
+  }
+  

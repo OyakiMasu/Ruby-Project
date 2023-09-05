@@ -71,6 +71,7 @@ function Billing(props) {
       <label>
         State:
         <input
+        
           type="text"
           value={state}
           onChange={(event) => setState(event.target.value)}
